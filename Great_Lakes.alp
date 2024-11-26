@@ -111,480 +111,1418 @@
 			</ScaleRuler>
 			<CurrentLevel>1730752554079</CurrentLevel>
 			<ConnectionsId>1730752554073</ConnectionsId>
-			<Connectors>
-				<Connector>
-					<Id>1731961131884</Id>
-					<Name><![CDATA[connector]]></Name>
-					<X>275</X><Y>160</Y>
+			<Variables>
+				<Variable Class="StockVariable">
+					<Id>1732396479023</Id>
+					<Name><![CDATA[Superior]]></Name>
+					<X>290</X><Y>130</Y>
+					<Label><X>-10</X><Y>-35</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties Array="false">
+					<EquationStyle>classic</EquationStyle>
+					<Width>100</Width>
+					<Height>40</Height>
+						<InitialValue><![CDATA[SuperiorInitial]]></InitialValue>
+						<Color/>
+					</Properties>
+				</Variable>
+				<Variable Class="StockVariable">
+					<Id>1732396482133</Id>
+					<Name><![CDATA[Huron]]></Name>
+					<X>510</X><Y>280</Y>
+					<Label><X>-55</X><Y>30</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties Array="false">
+					<EquationStyle>classic</EquationStyle>
+					<Width>80</Width>
+					<Height>40</Height>
+						<InitialValue><![CDATA[HuronInitial]]></InitialValue>
+						<Color/>
+					</Properties>
+				</Variable>
+				<Variable Class="StockVariable">
+					<Id>1732397481552</Id>
+					<Name><![CDATA[stock]]></Name>
+					<X>320</X><Y>340</Y>
+					<Label><X>20</X><Y>5</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties Array="false">
+					<EquationStyle>classic</EquationStyle>
+					<Width>20</Width>
+					<Height>100</Height>
+						<InitialValue><![CDATA[MichiganInitial]]></InitialValue>
+						<Color/>
+					</Properties>
+				</Variable>
+				<Variable Class="StockVariable">
+					<Id>1732397484062</Id>
+					<Name><![CDATA[stock1]]></Name>
+					<X>580</X><Y>440</Y>
+					<Label><X>-15</X><Y>25</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties Array="false">
+					<EquationStyle>classic</EquationStyle>
+					<Width>80</Width>
+					<Height>20</Height>
+						<InitialValue><![CDATA[ErieInitial]]></InitialValue>
+						<Color/>
+					</Properties>
+				</Variable>
+				<Variable Class="StockVariable">
+					<Id>1732397486480</Id>
+					<Name><![CDATA[stock2]]></Name>
+					<X>700</X><Y>330</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties Array="false">
+					<EquationStyle>classic</EquationStyle>
+					<Width>100</Width>
+					<Height>20</Height>
+						<InitialValue><![CDATA[OntarioInitial]]></InitialValue>
+						<Color/>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1732396597765</Id>
+					<Name><![CDATA[Dam]]></Name>
+					<X>290</X><Y>130</Y>
+					<Label><X>5</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SourceId="1732396479023" TargetId="1732396482133" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[SuperiorDam]]></Formula>
+						<Color/>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>120</X><Y>70</Y></Point>
+							<Point><X>157</X><Y>98</Y></Point>
+							<Point><X>220</X><Y>150</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1732396602629</Id>
+					<Name><![CDATA[Precipitation]]></Name>
+					<X>200</X><Y>50</Y>
+					<Label><X>-5</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties TargetId="1732396479023" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[SuperiorPrecipitation]]></Formula>
+						<Value><![CDATA[PrecipitationRate]]></Value>
+						<Color/>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>30</X><Y>40</Y></Point>
+							<Point><X>90</X><Y>80</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1732396609349</Id>
+					<Name><![CDATA[RunOff]]></Name>
+					<X>110</X><Y>230</Y>
+					<Label><X>-10</X><Y>25</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties TargetId="1732396479023" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[SuperiorRunOff
+]]></Formula>
+						<Color/>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>70</X><Y>-20</Y></Point>
+							<Point><X>180</X><Y>-100</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1732397499175</Id>
+					<Name><![CDATA[flow]]></Name>
+					<X>510</X><Y>280</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SourceId="1732396482133" TargetId="1732397484062" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[HuronDam]]></Formula>
+						<Color/>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>-20</X><Y>170</Y></Point>
+							<Point><X>70</X><Y>160</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1732397503971</Id>
+					<Name><![CDATA[flow1]]></Name>
+					<X>580</X><Y>440</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SourceId="1732397484062" TargetId="1732397486480" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[ErieDam]]></Formula>
+						<Color/>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>80</X><Y>-60</Y></Point>
+							<Point><X>120</X><Y>-110</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1732397511131</Id>
+					<Name><![CDATA[flow3]]></Name>
+					<X>320</X><Y>340</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SourceId="1732397481552" TargetId="1732396482133" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[MichiganDam]]></Formula>
+						<Color/>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>80</X><Y>-100</Y></Point>
+							<Point><X>190</X><Y>-60</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1732397533969</Id>
+					<Name><![CDATA[flow4]]></Name>
+					<X>190</X><Y>370</Y>
+					<Label><X>-35</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties TargetId="1732397481552" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[0]]></Formula>
+						<Color/>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>90</X><Y>-20</Y></Point>
+							<Point><X>130</X><Y>-30</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1732397581219</Id>
+					<Name><![CDATA[flow5]]></Name>
+					<X>190</X><Y>420</Y>
+					<Label><X>-35</X><Y>25</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties TargetId="1732397481552" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[MichiganPrecipitation]]></Formula>
+						<Color/>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>90</X><Y>-20</Y></Point>
+							<Point><X>130</X><Y>-80</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1732397589418</Id>
+					<Name><![CDATA[flow6]]></Name>
+					<X>560</X><Y>160</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties TargetId="1732396482133" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[HuronRunOff]]></Formula>
+						<Color/>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>-20</X><Y>40</Y></Point>
+							<Point><X>-50</X><Y>120</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1732397619689</Id>
+					<Name><![CDATA[flow7]]></Name>
+					<X>620</X><Y>170</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties TargetId="1732396482133" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[HuronPrecipitation]]></Formula>
+						<Color/>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>-40</X><Y>60</Y></Point>
+							<Point><X>-110</X><Y>110</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1732397637745</Id>
+					<Name><![CDATA[ConsumerUse]]></Name>
+					<X>290</X><Y>130</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SourceId="1732396479023" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[SuperiorConsumer]]></Formula>
+						<Color/>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>-50</X><Y>100</Y></Point>
+							<Point><X>-130</X><Y>145</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1732564005645</Id>
+					<Name><![CDATA[flow2]]></Name>
+					<X>510</X><Y>280</Y>
+					<Label><X>-90</X><Y>20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SourceId="1732396482133" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[HuronConsumer]]></Formula>
+						<Color/>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>-60</X><Y>80</Y></Point>
+							<Point><X>-90</X><Y>130</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1732564189823</Id>
+					<Name><![CDATA[flow8]]></Name>
+					<X>700</X><Y>330</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SourceId="1732397486480" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[OntarioDam]]></Formula>
+						<Color/>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>70</X><Y>-30</Y></Point>
+							<Point><X>130</X><Y>-110</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1732564600760</Id>
+					<Name><![CDATA[flow9]]></Name>
+					<X>320</X><Y>340</Y>
+					<Label><X>-35</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SourceId="1732397481552" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[MichiganConsumer]]></Formula>
+						<Color/>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>30</X><Y>10</Y></Point>
+							<Point><X>80</X><Y>60</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1732564678699</Id>
+					<Name><![CDATA[flow10]]></Name>
+					<X>500</X><Y>500</Y>
+					<Label><X>-108</X><Y>52</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties TargetId="1732397484062" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[ErieRunOff]]></Formula>
+						<Color/>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>20</X><Y>-20</Y></Point>
+							<Point><X>80</X><Y>-60</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1732564703532</Id>
+					<Name><![CDATA[flow11]]></Name>
+					<X>511</X><Y>516</Y>
+					<Label><X>-108</X><Y>52</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties TargetId="1732397484062" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[EriePrecipitation]]></Formula>
+						<Color/>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>20</X><Y>-20</Y></Point>
+							<Point><X>69</X><Y>-76</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1732564709475</Id>
+					<Name><![CDATA[flow12]]></Name>
+					<X>580</X><Y>440</Y>
+					<Label><X>-11</X><Y>34</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SourceId="1732397484062" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[HuronPrecipitation]]></Formula>
+						<Color/>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>0</X><Y>30</Y></Point>
+							<Point><X>10</X><Y>70</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1732564742505</Id>
+					<Name><![CDATA[flow13]]></Name>
+					<X>720</X><Y>420</Y>
+					<Label><X>-108</X><Y>52</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties TargetId="1732397486480" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[OntarioRunOff]]></Formula>
+						<Color/>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>-10</X><Y>-60</Y></Point>
+							<Point><X>-20</X><Y>-90</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1732564755757</Id>
+					<Name><![CDATA[flow14]]></Name>
+					<X>760</X><Y>410</Y>
+					<Label><X>-108</X><Y>52</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties TargetId="1732397486480" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[OntarioPrecipitation]]></Formula>
+						<Color/>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>-10</X><Y>-50</Y></Point>
+							<Point><X>-60</X><Y>-80</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1732564764259</Id>
+					<Name><![CDATA[flow15]]></Name>
+					<X>700</X><Y>330</Y>
+					<Label><X>-108</X><Y>52</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SourceId="1732397486480" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[OntarioConsumer]]></Formula>
+						<Color/>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>-10</X><Y>-50</Y></Point>
+							<Point><X>-10</X><Y>-110</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1732396649859</Id>
+					<Name><![CDATA[SuperiorPrecipitation]]></Name>
+					<X>50</X><Y>580</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[great_lakes]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[Superior]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[Tank]]></ClassName>
-						<ItemName><![CDATA[in]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[great_lakes]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[fluidSource]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[FluidSource]]></ClassName>
-						<ItemName><![CDATA[out]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-30</X><Y>-40</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
-					<Id>1731961230675</Id>
-					<Name><![CDATA[connector1]]></Name>
-					<X>360</X><Y>240</Y>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[2000]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1732396649857</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1732396659018</Id>
+					<Name><![CDATA[SuperiorRunOff]]></Name>
+					<X>50</X><Y>560</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[great_lakes]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[pipeline]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[Pipeline]]></ClassName>
-						<ItemName><![CDATA[in]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[great_lakes]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[Superior]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[Tank]]></ClassName>
-						<ItemName><![CDATA[out]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-55</X><Y>-30</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
-					<Id>1731961272768</Id>
-					<Name><![CDATA[connector4]]></Name>
-					<ExcludeFromBuild>true</ExcludeFromBuild>
-					<X>320</X><Y>-20</Y>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[10000]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1732396659016</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1732396697043</Id>
+					<Name><![CDATA[SuperiorDam]]></Name>
+					<X>50</X><Y>620</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[great_lakes]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[mixTank2]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[MixTank]]></ClassName>
-						<ItemName><![CDATA[in1]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[great_lakes]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[fluidSource5]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[FluidSource]]></ClassName>
-						<ItemName><![CDATA[out]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>755</X><Y>295</Y></Point>
-						<Point><X>720</X><Y>260</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
-					<Id>1731961310283</Id>
-					<Name><![CDATA[connector5]]></Name>
-					<ExcludeFromBuild>true</ExcludeFromBuild>
-					<X>875</X><Y>335</Y>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[100]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1732396697041</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1732396784436</Id>
+					<Name><![CDATA[SuperiorInitial]]></Name>
+					<X>50</X><Y>600</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[great_lakes]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[pipeline1]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[Pipeline]]></ClassName>
-						<ItemName><![CDATA[in]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[great_lakes]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[mixTank]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[MixTank]]></ClassName>
-						<ItemName><![CDATA[out]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-70</X><Y>-45</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
-					<Id>1731961316109</Id>
-					<Name><![CDATA[connector6]]></Name>
-					<ExcludeFromBuild>true</ExcludeFromBuild>
-					<X>925</X><Y>335</Y>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<ParameterEditor>
+							<Id>1732396784434</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1732397728026</Id>
+					<Name><![CDATA[SuperiorConsumer]]></Name>
+					<X>50</X><Y>640</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[great_lakes]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[pipeline1]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[Pipeline]]></ClassName>
-						<ItemName><![CDATA[out]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[great_lakes]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[mixTank1]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[MixTank]]></ClassName>
-						<ItemName><![CDATA[in1]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>70</X><Y>50</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
-					<Id>1731961323371</Id>
-					<Name><![CDATA[connector7]]></Name>
-					<ExcludeFromBuild>true</ExcludeFromBuild>
-					<X>950</X><Y>510</Y>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<ParameterEditor>
+							<Id>1732397728024</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1732563822952</Id>
+					<Name><![CDATA[HuronPrecipitation]]></Name>
+					<X>440</X><Y>580</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[great_lakes]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[fluidSource4]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[FluidSource]]></ClassName>
-						<ItemName><![CDATA[out]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[great_lakes]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[mixTank1]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[MixTank]]></ClassName>
-						<ItemName><![CDATA[in5]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>45</X><Y>-85</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
-					<Id>1731961341732</Id>
-					<Name><![CDATA[connector3]]></Name>
-					<ExcludeFromBuild>true</ExcludeFromBuild>
-					<X>715</X><Y>335</Y>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[2000]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1732563822950</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1732563823002</Id>
+					<Name><![CDATA[HuronRunOff]]></Name>
+					<X>440</X><Y>560</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[great_lakes]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[pipeline2]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[Pipeline]]></ClassName>
-						<ItemName><![CDATA[out]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[great_lakes]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[mixTank]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[MixTank]]></ClassName>
-						<ItemName><![CDATA[in5]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>60</X><Y>-55</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
-					<Id>1731961362022</Id>
-					<Name><![CDATA[connector8]]></Name>
-					<ExcludeFromBuild>true</ExcludeFromBuild>
-					<X>770</X><Y>460</Y>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[10000]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1732563823000</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1732563823015</Id>
+					<Name><![CDATA[HuronDam]]></Name>
+					<X>440</X><Y>620</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[great_lakes]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[mixTank3]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[MixTank]]></ClassName>
-						<ItemName><![CDATA[out]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[great_lakes]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[pipeline2]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[Pipeline]]></ClassName>
-						<ItemName><![CDATA[in]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-105</X><Y>-125</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
-					<Id>1731961389140</Id>
-					<Name><![CDATA[connector9]]></Name>
-					<ExcludeFromBuild>true</ExcludeFromBuild>
-					<X>670</X><Y>470</Y>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[100]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1732563823013</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1732563823029</Id>
+					<Name><![CDATA[HuronInitial]]></Name>
+					<X>440</X><Y>600</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[great_lakes]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[fluidSource3]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[FluidSource]]></ClassName>
-						<ItemName><![CDATA[out]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[great_lakes]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[mixTank3]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[MixTank]]></ClassName>
-						<ItemName><![CDATA[in5]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>70</X><Y>-20</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
-					<Id>1731961426026</Id>
-					<Name><![CDATA[connector10]]></Name>
-					<ExcludeFromBuild>true</ExcludeFromBuild>
-					<X>1025</X><Y>435</Y>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<ParameterEditor>
+							<Id>1732563823027</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1732563823040</Id>
+					<Name><![CDATA[HuronConsumer]]></Name>
+					<X>440</X><Y>640</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[great_lakes]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[mixTank1]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[MixTank]]></ClassName>
-						<ItemName><![CDATA[out]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[great_lakes]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[mixTank2]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[MixTank]]></ClassName>
-						<ItemName><![CDATA[in5]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>50</X><Y>-120</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
-					<Id>1731961488915</Id>
-					<Name><![CDATA[connector11]]></Name>
-					<ExcludeFromBuild>true</ExcludeFromBuild>
-					<X>320</X><Y>-20</Y>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<ParameterEditor>
+							<Id>1732563823038</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1732564099605</Id>
+					<Name><![CDATA[EriePrecipitation]]></Name>
+					<X>610</X><Y>580</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[great_lakes]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[fluidExit]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[FluidExit]]></ClassName>
-						<ItemName><![CDATA[in]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[great_lakes]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[mixTank2]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[MixTank]]></ClassName>
-						<ItemName><![CDATA[out]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>850</X><Y>345</Y></Point>
-						<Point><X>785</X><Y>345</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
-					<Id>1731961499895</Id>
-					<Name><![CDATA[connector12]]></Name>
-					<ExcludeFromBuild>true</ExcludeFromBuild>
-					<X>320</X><Y>-20</Y>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[2000]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1732564099603</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1732564099611</Id>
+					<Name><![CDATA[ErieRunOff]]></Name>
+					<X>610</X><Y>560</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[great_lakes]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[fluidSource2]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[FluidSource]]></ClassName>
-						<ItemName><![CDATA[out]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[great_lakes]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[mixTank]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[MixTank]]></ClassName>
-						<ItemName><![CDATA[in1]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>490</X><Y>190</Y></Point>
-						<Point><X>455</X><Y>260</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
-					<Id>1731961932541</Id>
-					<Name><![CDATA[connector2]]></Name>
-					<X>460</X><Y>240</Y>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[10000]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1732564099609</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1732564099617</Id>
+					<Name><![CDATA[ErieDam]]></Name>
+					<X>610</X><Y>620</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[great_lakes]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[Dam]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[Valve]]></ClassName>
-						<ItemName><![CDATA[in]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[great_lakes]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[pipeline]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[Pipeline]]></ClassName>
-						<ItemName><![CDATA[out]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-50</X><Y>0</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
-					<Id>1731962513283</Id>
-					<Name><![CDATA[connector13]]></Name>
-					<X>550</X><Y>240</Y>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[100]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1732564099615</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1732564099623</Id>
+					<Name><![CDATA[ErieInitial]]></Name>
+					<X>610</X><Y>600</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<ParameterEditor>
+							<Id>1732564099621</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1732564099630</Id>
+					<Name><![CDATA[ErieConsumer]]></Name>
+					<X>610</X><Y>640</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<ParameterEditor>
+							<Id>1732564099628</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1732564107036</Id>
+					<Name><![CDATA[OntarioPrecipitation]]></Name>
+					<X>760</X><Y>580</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[2000]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1732564107034</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1732564107043</Id>
+					<Name><![CDATA[OntarioRunOff]]></Name>
+					<X>760</X><Y>560</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[10000]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1732564107041</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1732564107049</Id>
+					<Name><![CDATA[OntarioDam]]></Name>
+					<X>760</X><Y>620</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[100]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1732564107047</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1732564107054</Id>
+					<Name><![CDATA[OntarioInitial]]></Name>
+					<X>760</X><Y>600</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<ParameterEditor>
+							<Id>1732564107052</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1732564107059</Id>
+					<Name><![CDATA[OntarioConsumer]]></Name>
+					<X>760</X><Y>640</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<ParameterEditor>
+							<Id>1732564107057</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1732564446422</Id>
+					<Name><![CDATA[MichiganPrecipitation]]></Name>
+					<X>240</X><Y>580</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[2000]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1732564446420</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1732564446436</Id>
+					<Name><![CDATA[MichiganRunOff]]></Name>
+					<X>240</X><Y>560</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[10000]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1732564446434</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1732564446442</Id>
+					<Name><![CDATA[MichiganDam]]></Name>
+					<X>240</X><Y>620</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[100]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1732564446440</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1732564446447</Id>
+					<Name><![CDATA[MichiganInitial]]></Name>
+					<X>240</X><Y>600</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<ParameterEditor>
+							<Id>1732564446445</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1732564446452</Id>
+					<Name><![CDATA[MichiganConsumer]]></Name>
+					<X>240</X><Y>640</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<ParameterEditor>
+							<Id>1732564446450</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+			</Variables>
+			<Dependences>
+				<Link SourceId="1732396784436" TargetId="1732396479023" Polarity="null">
+					<Height>65.315</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>240</X><Y>-470</Y></Direction>
+					<Id>1732396909997</Id>
+					<Name><![CDATA[SuperiorInitial - Superior]]></Name>
+					<X>50</X><Y>600</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[great_lakes]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[ToHuron]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[FluidExit]]></ClassName>
-						<ItemName><![CDATA[in]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[great_lakes]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[Dam]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[Valve]]></ClassName>
-						<ItemName><![CDATA[out]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-70</X><Y>0</Y></Point>
-					</Points>
-				</Connector>
-			</Connectors>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1732396659018" TargetId="1732396609349" Polarity="null">
+					<Height>33.466</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>130</X><Y>-350</Y></Direction>
+					<Id>1732397031796</Id>
+					<Name><![CDATA[SuperiorRunOff - RunOff]]></Name>
+					<X>50</X><Y>560</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1732396649859" TargetId="1732396602629" Polarity="null">
+					<Height>43.735</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>180</X><Y>-490</Y></Direction>
+					<Id>1732397228125</Id>
+					<Name><![CDATA[SuperiorPrecipitation - Precipitation]]></Name>
+					<X>50</X><Y>580</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1732396697043" TargetId="1732396597765" Polarity="null">
+					<Height>126.038</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>360</X><Y>-420</Y></Direction>
+					<Id>1732397249531</Id>
+					<Name><![CDATA[SuperiorDam - Dam]]></Name>
+					<X>50</X><Y>620</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1732397728026" TargetId="1732397637745" Polarity="null">
+					<Height>66.261</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>190</X><Y>-410</Y></Direction>
+					<Id>1732397885008</Id>
+					<Name><![CDATA[SuperiorConsumer - ConsumerUse]]></Name>
+					<X>50</X><Y>640</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1732563823002" TargetId="1732397589418" Polarity="null">
+					<Height>39.061</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>100</X><Y>-360</Y></Direction>
+					<Id>1732563853420</Id>
+					<Name><![CDATA[HuronRunOff - flow6]]></Name>
+					<X>440</X><Y>560</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1732563823015" TargetId="1732397499175" Polarity="null">
+					<Height>87.54</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>50</X><Y>-170</Y></Direction>
+					<Id>1732563949073</Id>
+					<Name><![CDATA[HuronDam - flow]]></Name>
+					<X>440</X><Y>620</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1732563823040" TargetId="1732564005645" Polarity="null">
+					<Height>55.208</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>10</X><Y>-280</Y></Direction>
+					<Id>1732564046375</Id>
+					<Name><![CDATA[HuronConsumer - flow2]]></Name>
+					<X>440</X><Y>640</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1732564099623" TargetId="1732397484062" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-30</X><Y>-160</Y></Direction>
+					<Id>1732564242527</Id>
+					<Name><![CDATA[ErieInitial - stock1]]></Name>
+					<X>610</X><Y>600</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1732564099617" TargetId="1732397503971" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>50</X><Y>-240</Y></Direction>
+					<Id>1732564246985</Id>
+					<Name><![CDATA[ErieDam - flow1]]></Name>
+					<X>610</X><Y>620</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1732563823029" TargetId="1732396482133" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>70</X><Y>-320</Y></Direction>
+					<Id>1732564318401</Id>
+					<Name><![CDATA[HuronInitial - Huron]]></Name>
+					<X>440</X><Y>600</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1732564107054" TargetId="1732397486480" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-60</X><Y>-270</Y></Direction>
+					<Id>1732564398886</Id>
+					<Name><![CDATA[OntarioInitial - stock2]]></Name>
+					<X>760</X><Y>600</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1732564107049" TargetId="1732564189823" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>10</X><Y>-320</Y></Direction>
+					<Id>1732564409367</Id>
+					<Name><![CDATA[OntarioDam - flow8]]></Name>
+					<X>760</X><Y>620</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1732564446447" TargetId="1732397481552" Polarity="null">
+					<Height>52.304</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>80</X><Y>-260</Y></Direction>
+					<Id>1732564529398</Id>
+					<Name><![CDATA[MichiganInitial - stock]]></Name>
+					<X>240</X><Y>600</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link TargetId="1732397533969" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>40</X><Y>-220</Y></Direction>
+					<Id>1732564547621</Id>
+					<Name><![CDATA[ - flow4]]></Name>
+					<X>240</X><Y>570</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1732564446422" TargetId="1732397581219" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>40</X><Y>-180</Y></Direction>
+					<Id>1732564551412</Id>
+					<Name><![CDATA[MichiganPrecipitation - flow5]]></Name>
+					<X>240</X><Y>580</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1732564446442" TargetId="1732397511131" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>160</X><Y>-380</Y></Direction>
+					<Id>1732564557474</Id>
+					<Name><![CDATA[MichiganDam - flow3]]></Name>
+					<X>240</X><Y>620</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1732564446452" TargetId="1732564600760" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>110</X><Y>-290</Y></Direction>
+					<Id>1732564616089</Id>
+					<Name><![CDATA[MichiganConsumer - flow9]]></Name>
+					<X>240</X><Y>640</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link TargetId="1732564709475" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-40</X><Y>-170</Y></Direction>
+					<Id>1732564728033</Id>
+					<Name><![CDATA[ - flow12]]></Name>
+					<X>620</X><Y>640</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1732564099611" TargetId="1732564678699" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-90</X><Y>-80</Y></Direction>
+					<Id>1732564733270</Id>
+					<Name><![CDATA[ErieRunOff - flow10]]></Name>
+					<X>610</X><Y>560</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1732564099605" TargetId="1732564703532" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-79</X><Y>-84</Y></Direction>
+					<Id>1732564737315</Id>
+					<Name><![CDATA[EriePrecipitation - flow11]]></Name>
+					<X>610</X><Y>580</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1732564107043" TargetId="1732564742505" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-50</X><Y>-200</Y></Direction>
+					<Id>1732564774609</Id>
+					<Name><![CDATA[OntarioRunOff - flow13]]></Name>
+					<X>760</X><Y>560</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1732564107036" TargetId="1732564755757" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-10</X><Y>-220</Y></Direction>
+					<Id>1732564778608</Id>
+					<Name><![CDATA[OntarioPrecipitation - flow14]]></Name>
+					<X>760</X><Y>580</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1732564107059" TargetId="1732564764259" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-70</X><Y>-360</Y></Direction>
+					<Id>1732564784161</Id>
+					<Name><![CDATA[OntarioConsumer - flow15]]></Name>
+					<X>760</X><Y>640</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1732563822952" TargetId="1732397619689" Polarity="null">
+					<Height>20.0</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>140</X><Y>-350</Y></Direction>
+					<Id>1732564818931</Id>
+					<Name><![CDATA[HuronPrecipitation - flow7]]></Name>
+					<X>440</X><Y>580</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+			</Dependences>
 			<AgentLinks>
 				<AgentLink>
 					<Id>1730752554073</Id>
@@ -607,1866 +1545,6 @@
 				</AgentLink>
 			</AgentLinks>
 
-			<EmbeddedObjects>
-				<EmbeddedObject>
-					<Id>1731960874747</Id>
-					<Name><![CDATA[fluidSource]]></Name>
-					<X>215</X><Y>110</Y>
-					<Label><X>-30</X><Y>-25</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<ActiveObjectClass>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[FluidSource]]></ClassName>
-					</ActiveObjectClass>
-					<GenericParameterSubstitute>
-						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-							<ClassName><![CDATA[FluidSource]]></ClassName>
-							<ItemName><![CDATA[1412618001591]]></ItemName>
-						</GenericParameterSubstituteReference>
-					</GenericParameterSubstitute>
-					<Parameters>
-						<Parameter>
-							<Name><![CDATA[maxRate]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[rate]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[infiniteCapacity]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[initialAmount]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[customPriority]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[priorityOutCustom]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[modeBatchCustom]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[customBatch]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[customBatchColor]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[batchColor]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[storageTank]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[showBatchesInFlowchart]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onEmpty]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onNewBatchOut]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onRateChange]]></Name>
-						</Parameter>
-					</Parameters>
-					<ReplicationFlag>false</ReplicationFlag>
-					<Replication Class="CodeValue">
-						<Code><![CDATA[100]]></Code>
-					</Replication>
-					<CollectionType>ARRAY_LIST_BASED</CollectionType>
-					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
-					<XCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</XCode>
-					<YCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</YCode>
-					<ZCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ZCode>
-					<ColumnCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ColumnCode>
-					<RowCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</RowCode>
-					<LatitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LatitudeCode>
-					<LongitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LongitudeCode>
-					<LocationNameCode Class="CodeValue">
-						<Code><![CDATA[""]]></Code>
-					</LocationNameCode>
-					<InitializationType>SPECIFIED_NUMBER</InitializationType>
-					<InitializationDatabaseTableQuery>
-						<TableReference>
-						</TableReference>
-					</InitializationDatabaseTableQuery>
-					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
-					<QuantityColumn>
-					</QuantityColumn>
-				</EmbeddedObject>
-				<EmbeddedObject>
-					<Id>1731960887579</Id>
-					<Name><![CDATA[fluidSource2]]></Name>
-					<ExcludeFromBuild>true</ExcludeFromBuild>
-					<X>780</X><Y>160</Y>
-					<Label><X>-30</X><Y>-25</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<ActiveObjectClass>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[FluidSource]]></ClassName>
-					</ActiveObjectClass>
-					<GenericParameterSubstitute>
-						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-							<ClassName><![CDATA[FluidSource]]></ClassName>
-							<ItemName><![CDATA[1412618001591]]></ItemName>
-						</GenericParameterSubstituteReference>
-					</GenericParameterSubstitute>
-					<Parameters>
-						<Parameter>
-							<Name><![CDATA[maxRate]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[rate]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[infiniteCapacity]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[initialAmount]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[customPriority]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[priorityOutCustom]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[modeBatchCustom]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[customBatch]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[customBatchColor]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[batchColor]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[storageTank]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[showBatchesInFlowchart]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onEmpty]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onNewBatchOut]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onRateChange]]></Name>
-						</Parameter>
-					</Parameters>
-					<ReplicationFlag>false</ReplicationFlag>
-					<Replication Class="CodeValue">
-						<Code><![CDATA[100]]></Code>
-					</Replication>
-					<CollectionType>ARRAY_LIST_BASED</CollectionType>
-					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
-					<XCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</XCode>
-					<YCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</YCode>
-					<ZCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ZCode>
-					<ColumnCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ColumnCode>
-					<RowCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</RowCode>
-					<LatitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LatitudeCode>
-					<LongitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LongitudeCode>
-					<LocationNameCode Class="CodeValue">
-						<Code><![CDATA[""]]></Code>
-					</LocationNameCode>
-					<InitializationType>SPECIFIED_NUMBER</InitializationType>
-					<InitializationDatabaseTableQuery>
-						<TableReference>
-						</TableReference>
-					</InitializationDatabaseTableQuery>
-					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
-					<QuantityColumn>
-					</QuantityColumn>
-				</EmbeddedObject>
-				<EmbeddedObject>
-					<Id>1731960890460</Id>
-					<Name><![CDATA[fluidSource3]]></Name>
-					<ExcludeFromBuild>true</ExcludeFromBuild>
-					<X>640</X><Y>460</Y>
-					<Label><X>-30</X><Y>-25</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<ActiveObjectClass>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[FluidSource]]></ClassName>
-					</ActiveObjectClass>
-					<GenericParameterSubstitute>
-						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-							<ClassName><![CDATA[FluidSource]]></ClassName>
-							<ItemName><![CDATA[1412618001591]]></ItemName>
-						</GenericParameterSubstituteReference>
-					</GenericParameterSubstitute>
-					<Parameters>
-						<Parameter>
-							<Name><![CDATA[maxRate]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[rate]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[infiniteCapacity]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[initialAmount]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[customPriority]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[priorityOutCustom]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[modeBatchCustom]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[customBatch]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[customBatchColor]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[batchColor]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[storageTank]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[showBatchesInFlowchart]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onEmpty]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onNewBatchOut]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onRateChange]]></Name>
-						</Parameter>
-					</Parameters>
-					<ReplicationFlag>false</ReplicationFlag>
-					<Replication Class="CodeValue">
-						<Code><![CDATA[100]]></Code>
-					</Replication>
-					<CollectionType>ARRAY_LIST_BASED</CollectionType>
-					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
-					<XCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</XCode>
-					<YCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</YCode>
-					<ZCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ZCode>
-					<ColumnCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ColumnCode>
-					<RowCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</RowCode>
-					<LatitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LatitudeCode>
-					<LongitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LongitudeCode>
-					<LocationNameCode Class="CodeValue">
-						<Code><![CDATA[""]]></Code>
-					</LocationNameCode>
-					<InitializationType>SPECIFIED_NUMBER</InitializationType>
-					<InitializationDatabaseTableQuery>
-						<TableReference>
-						</TableReference>
-					</InitializationDatabaseTableQuery>
-					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
-					<QuantityColumn>
-					</QuantityColumn>
-				</EmbeddedObject>
-				<EmbeddedObject>
-					<Id>1731960894329</Id>
-					<Name><![CDATA[fluidSource4]]></Name>
-					<ExcludeFromBuild>true</ExcludeFromBuild>
-					<X>920</X><Y>500</Y>
-					<Label><X>-30</X><Y>-25</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<ActiveObjectClass>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[FluidSource]]></ClassName>
-					</ActiveObjectClass>
-					<GenericParameterSubstitute>
-						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-							<ClassName><![CDATA[FluidSource]]></ClassName>
-							<ItemName><![CDATA[1412618001591]]></ItemName>
-						</GenericParameterSubstituteReference>
-					</GenericParameterSubstitute>
-					<Parameters>
-						<Parameter>
-							<Name><![CDATA[maxRate]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[rate]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[infiniteCapacity]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[initialAmount]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[customPriority]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[priorityOutCustom]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[modeBatchCustom]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[customBatch]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[customBatchColor]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[batchColor]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[storageTank]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[showBatchesInFlowchart]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onEmpty]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onNewBatchOut]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onRateChange]]></Name>
-						</Parameter>
-					</Parameters>
-					<ReplicationFlag>false</ReplicationFlag>
-					<Replication Class="CodeValue">
-						<Code><![CDATA[100]]></Code>
-					</Replication>
-					<CollectionType>ARRAY_LIST_BASED</CollectionType>
-					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
-					<XCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</XCode>
-					<YCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</YCode>
-					<ZCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ZCode>
-					<ColumnCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ColumnCode>
-					<RowCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</RowCode>
-					<LatitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LatitudeCode>
-					<LongitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LongitudeCode>
-					<LocationNameCode Class="CodeValue">
-						<Code><![CDATA[""]]></Code>
-					</LocationNameCode>
-					<InitializationType>SPECIFIED_NUMBER</InitializationType>
-					<InitializationDatabaseTableQuery>
-						<TableReference>
-						</TableReference>
-					</InitializationDatabaseTableQuery>
-					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
-					<QuantityColumn>
-					</QuantityColumn>
-				</EmbeddedObject>
-				<EmbeddedObject>
-					<Id>1731960898784</Id>
-					<Name><![CDATA[fluidSource5]]></Name>
-					<ExcludeFromBuild>true</ExcludeFromBuild>
-					<X>1010</X><Y>230</Y>
-					<Label><X>-30</X><Y>-25</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<ActiveObjectClass>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[FluidSource]]></ClassName>
-					</ActiveObjectClass>
-					<GenericParameterSubstitute>
-						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-							<ClassName><![CDATA[FluidSource]]></ClassName>
-							<ItemName><![CDATA[1412618001591]]></ItemName>
-						</GenericParameterSubstituteReference>
-					</GenericParameterSubstitute>
-					<Parameters>
-						<Parameter>
-							<Name><![CDATA[maxRate]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[rate]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[infiniteCapacity]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[initialAmount]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[customPriority]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[priorityOutCustom]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[modeBatchCustom]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[customBatch]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[customBatchColor]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[batchColor]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[storageTank]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[showBatchesInFlowchart]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onEmpty]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onNewBatchOut]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onRateChange]]></Name>
-						</Parameter>
-					</Parameters>
-					<ReplicationFlag>false</ReplicationFlag>
-					<Replication Class="CodeValue">
-						<Code><![CDATA[100]]></Code>
-					</Replication>
-					<CollectionType>ARRAY_LIST_BASED</CollectionType>
-					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
-					<XCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</XCode>
-					<YCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</YCode>
-					<ZCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ZCode>
-					<ColumnCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ColumnCode>
-					<RowCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</RowCode>
-					<LatitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LatitudeCode>
-					<LongitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LongitudeCode>
-					<LocationNameCode Class="CodeValue">
-						<Code><![CDATA[""]]></Code>
-					</LocationNameCode>
-					<InitializationType>SPECIFIED_NUMBER</InitializationType>
-					<InitializationDatabaseTableQuery>
-						<TableReference>
-						</TableReference>
-					</InitializationDatabaseTableQuery>
-					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
-					<QuantityColumn>
-					</QuantityColumn>
-				</EmbeddedObject>
-				<EmbeddedObject>
-					<Id>1731961130004</Id>
-					<Name><![CDATA[Superior]]></Name>
-					<X>275</X><Y>150</Y>
-					<Label><X>-5</X><Y>-20</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<ActiveObjectClass>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[Tank]]></ClassName>
-					</ActiveObjectClass>
-					<GenericParameterSubstitute>
-						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-							<ClassName><![CDATA[Tank]]></ClassName>
-							<ItemName><![CDATA[1412618001571]]></ItemName>
-						</GenericParameterSubstituteReference>
-					</GenericParameterSubstitute>
-					<Parameters>
-						<Parameter>
-							<Name><![CDATA[capacity]]></Name>
-							<Value Class="CodeUnitValue">
-								<Code><![CDATA[100000]]></Code>
-								<Unit Class="AmountUnits"><![CDATA[CUBIC_METER]]></Unit>
-							</Value>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[initialAmount]]></Name>
-							<Value Class="CodeUnitValue">
-								<Code><![CDATA[50000]]></Code>
-								<Unit Class="AmountUnits"><![CDATA[CUBIC_METER]]></Unit>
-							</Value>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[limitRateOut]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[true]]></Code>
-							</Value>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[maxRateOut]]></Name>
-							<Value Class="CodeUnitValue">
-								<Code><![CDATA[2000]]></Code>
-								<Unit Class="FlowRateUnits"><![CDATA[CUBIC_METER_PER_SECOND]]></Unit>
-							</Value>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[customPriority]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[priorityOutCustom]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[customInitialBatch]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[initialBatch]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[customInitialBatchColor]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[initialBatchColor]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[modeOutputBatch]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[outputBatch]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[customOutputBatchColor]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[outputBatchColor]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[storageTank]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[showBatchesInFlowchart]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onFull]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onEmpty]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[actionOnAbove]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[amountAbove]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onAbove]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[actionOnBelow]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[amountBelow]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onBelow]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onNewBatchIn]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onNewBatchOut]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onRateChange]]></Name>
-						</Parameter>
-					</Parameters>
-					<ReplicationFlag>false</ReplicationFlag>
-					<Replication Class="CodeValue">
-						<Code><![CDATA[100]]></Code>
-					</Replication>
-					<CollectionType>ARRAY_LIST_BASED</CollectionType>
-					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
-					<XCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</XCode>
-					<YCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</YCode>
-					<ZCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ZCode>
-					<ColumnCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ColumnCode>
-					<RowCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</RowCode>
-					<LatitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LatitudeCode>
-					<LongitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LongitudeCode>
-					<LocationNameCode Class="CodeValue">
-						<Code><![CDATA[""]]></Code>
-					</LocationNameCode>
-					<InitializationType>SPECIFIED_NUMBER</InitializationType>
-					<InitializationDatabaseTableQuery>
-						<TableReference>
-						</TableReference>
-					</InitializationDatabaseTableQuery>
-					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
-					<QuantityColumn>
-					</QuantityColumn>
-				</EmbeddedObject>
-				<EmbeddedObject>
-					<Id>1731961215324</Id>
-					<Name><![CDATA[mixTank]]></Name>
-					<ExcludeFromBuild>true</ExcludeFromBuild>
-					<X>775</X><Y>230</Y>
-					<Label><X>-25</X><Y>-20</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<ActiveObjectClass>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[MixTank]]></ClassName>
-					</ActiveObjectClass>
-					<GenericParameterSubstitute>
-						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-							<ClassName><![CDATA[MixTank]]></ClassName>
-							<ItemName><![CDATA[1441474738574]]></ItemName>
-						</GenericParameterSubstituteReference>
-					</GenericParameterSubstitute>
-					<Parameters>
-						<Parameter>
-							<Name><![CDATA[mixByAmounts]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[capacity]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[amount1]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[amount2]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[amount3]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[amount4]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[amount5]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[fraction1]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[fraction2]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[fraction3]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[fraction4]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[fraction5]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[delayTime]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[limitRateOut]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[maxRateOut]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[modeOutputBatch]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[outputBatch]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[customOutputBatchColor]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[outputBatchColor]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[storageTank]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[showBatchesInFlowchart]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onMixCompleted]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onMixReady]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onEmpty]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onRateChange]]></Name>
-						</Parameter>
-					</Parameters>
-					<ReplicationFlag>false</ReplicationFlag>
-					<Replication Class="CodeValue">
-						<Code><![CDATA[100]]></Code>
-					</Replication>
-					<CollectionType>ARRAY_LIST_BASED</CollectionType>
-					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
-					<XCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</XCode>
-					<YCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</YCode>
-					<ZCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ZCode>
-					<ColumnCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ColumnCode>
-					<RowCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</RowCode>
-					<LatitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LatitudeCode>
-					<LongitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LongitudeCode>
-					<LocationNameCode Class="CodeValue">
-						<Code><![CDATA[""]]></Code>
-					</LocationNameCode>
-					<InitializationType>SPECIFIED_NUMBER</InitializationType>
-					<InitializationDatabaseTableQuery>
-						<TableReference>
-						</TableReference>
-					</InitializationDatabaseTableQuery>
-					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
-					<QuantityColumn>
-					</QuantityColumn>
-				</EmbeddedObject>
-				<EmbeddedObject>
-					<Id>1731961229595</Id>
-					<Name><![CDATA[pipeline]]></Name>
-					<X>360</X><Y>230</Y>
-					<Label><X>-15</X><Y>-20</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<ActiveObjectClass>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[Pipeline]]></ClassName>
-					</ActiveObjectClass>
-					<GenericParameterSubstitute>
-						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-							<ClassName><![CDATA[Pipeline]]></ClassName>
-							<ItemName><![CDATA[1412618001587]]></ItemName>
-						</GenericParameterSubstituteReference>
-					</GenericParameterSubstitute>
-					<Parameters>
-						<Parameter>
-							<Name><![CDATA[capacity]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[initialAmount]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[limitRate]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[maxRate]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[customPriority]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[priorityOutCustom]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[customInitialBatch]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[initialBatch]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[customInitialBatchColor]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[initialBatchColor]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[pipe]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[showBatchesInFlowchart]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onFull]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onNewBatchIn]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onNewBatchOut]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onRateChange]]></Name>
-						</Parameter>
-					</Parameters>
-					<ReplicationFlag>false</ReplicationFlag>
-					<Replication Class="CodeValue">
-						<Code><![CDATA[100]]></Code>
-					</Replication>
-					<CollectionType>ARRAY_LIST_BASED</CollectionType>
-					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
-					<XCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</XCode>
-					<YCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</YCode>
-					<ZCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ZCode>
-					<ColumnCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ColumnCode>
-					<RowCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</RowCode>
-					<LatitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LatitudeCode>
-					<LongitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LongitudeCode>
-					<LocationNameCode Class="CodeValue">
-						<Code><![CDATA[""]]></Code>
-					</LocationNameCode>
-					<InitializationType>SPECIFIED_NUMBER</InitializationType>
-					<InitializationDatabaseTableQuery>
-						<TableReference>
-						</TableReference>
-					</InitializationDatabaseTableQuery>
-					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
-					<QuantityColumn>
-					</QuantityColumn>
-				</EmbeddedObject>
-				<EmbeddedObject>
-					<Id>1731961265012</Id>
-					<Name><![CDATA[mixTank1]]></Name>
-					<ExcludeFromBuild>true</ExcludeFromBuild>
-					<X>995</X><Y>375</Y>
-					<Label><X>-25</X><Y>-20</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<ActiveObjectClass>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[MixTank]]></ClassName>
-					</ActiveObjectClass>
-					<GenericParameterSubstitute>
-						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-							<ClassName><![CDATA[MixTank]]></ClassName>
-							<ItemName><![CDATA[1441474738574]]></ItemName>
-						</GenericParameterSubstituteReference>
-					</GenericParameterSubstitute>
-					<Parameters>
-						<Parameter>
-							<Name><![CDATA[mixByAmounts]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[capacity]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[amount1]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[amount2]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[amount3]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[amount4]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[amount5]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[fraction1]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[fraction2]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[fraction3]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[fraction4]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[fraction5]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[delayTime]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[limitRateOut]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[maxRateOut]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[modeOutputBatch]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[outputBatch]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[customOutputBatchColor]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[outputBatchColor]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[storageTank]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[showBatchesInFlowchart]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onMixCompleted]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onMixReady]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onEmpty]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onRateChange]]></Name>
-						</Parameter>
-					</Parameters>
-					<ReplicationFlag>false</ReplicationFlag>
-					<Replication Class="CodeValue">
-						<Code><![CDATA[100]]></Code>
-					</Replication>
-					<CollectionType>ARRAY_LIST_BASED</CollectionType>
-					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
-					<XCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</XCode>
-					<YCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</YCode>
-					<ZCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ZCode>
-					<ColumnCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ColumnCode>
-					<RowCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</RowCode>
-					<LatitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LatitudeCode>
-					<LongitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LongitudeCode>
-					<LocationNameCode Class="CodeValue">
-						<Code><![CDATA[""]]></Code>
-					</LocationNameCode>
-					<InitializationType>SPECIFIED_NUMBER</InitializationType>
-					<InitializationDatabaseTableQuery>
-						<TableReference>
-						</TableReference>
-					</InitializationDatabaseTableQuery>
-					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
-					<QuantityColumn>
-					</QuantityColumn>
-				</EmbeddedObject>
-				<EmbeddedObject>
-					<Id>1731961268997</Id>
-					<Name><![CDATA[mixTank2]]></Name>
-					<ExcludeFromBuild>true</ExcludeFromBuild>
-					<X>1075</X><Y>265</Y>
-					<Label><X>-25</X><Y>-20</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<ActiveObjectClass>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[MixTank]]></ClassName>
-					</ActiveObjectClass>
-					<GenericParameterSubstitute>
-						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-							<ClassName><![CDATA[MixTank]]></ClassName>
-							<ItemName><![CDATA[1441474738574]]></ItemName>
-						</GenericParameterSubstituteReference>
-					</GenericParameterSubstitute>
-					<Parameters>
-						<Parameter>
-							<Name><![CDATA[mixByAmounts]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[capacity]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[amount1]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[amount2]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[amount3]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[amount4]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[amount5]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[fraction1]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[fraction2]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[fraction3]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[fraction4]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[fraction5]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[delayTime]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[limitRateOut]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[maxRateOut]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[modeOutputBatch]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[outputBatch]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[customOutputBatchColor]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[outputBatchColor]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[storageTank]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[showBatchesInFlowchart]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onMixCompleted]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onMixReady]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onEmpty]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onRateChange]]></Name>
-						</Parameter>
-					</Parameters>
-					<ReplicationFlag>false</ReplicationFlag>
-					<Replication Class="CodeValue">
-						<Code><![CDATA[100]]></Code>
-					</Replication>
-					<CollectionType>ARRAY_LIST_BASED</CollectionType>
-					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
-					<XCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</XCode>
-					<YCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</YCode>
-					<ZCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ZCode>
-					<ColumnCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ColumnCode>
-					<RowCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</RowCode>
-					<LatitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LatitudeCode>
-					<LongitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LongitudeCode>
-					<LocationNameCode Class="CodeValue">
-						<Code><![CDATA[""]]></Code>
-					</LocationNameCode>
-					<InitializationType>SPECIFIED_NUMBER</InitializationType>
-					<InitializationDatabaseTableQuery>
-						<TableReference>
-						</TableReference>
-					</InitializationDatabaseTableQuery>
-					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
-					<QuantityColumn>
-					</QuantityColumn>
-				</EmbeddedObject>
-				<EmbeddedObject>
-					<Id>1731961309028</Id>
-					<Name><![CDATA[pipeline1]]></Name>
-					<ExcludeFromBuild>true</ExcludeFromBuild>
-					<X>875</X><Y>325</Y>
-					<Label><X>-15</X><Y>-20</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<ActiveObjectClass>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[Pipeline]]></ClassName>
-					</ActiveObjectClass>
-					<GenericParameterSubstitute>
-						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-							<ClassName><![CDATA[Pipeline]]></ClassName>
-							<ItemName><![CDATA[1412618001587]]></ItemName>
-						</GenericParameterSubstituteReference>
-					</GenericParameterSubstitute>
-					<Parameters>
-						<Parameter>
-							<Name><![CDATA[capacity]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[initialAmount]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[limitRate]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[maxRate]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[customPriority]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[priorityOutCustom]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[customInitialBatch]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[initialBatch]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[customInitialBatchColor]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[initialBatchColor]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[pipe]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[showBatchesInFlowchart]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onFull]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onNewBatchIn]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onNewBatchOut]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onRateChange]]></Name>
-						</Parameter>
-					</Parameters>
-					<ReplicationFlag>false</ReplicationFlag>
-					<Replication Class="CodeValue">
-						<Code><![CDATA[100]]></Code>
-					</Replication>
-					<CollectionType>ARRAY_LIST_BASED</CollectionType>
-					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
-					<XCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</XCode>
-					<YCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</YCode>
-					<ZCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ZCode>
-					<ColumnCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ColumnCode>
-					<RowCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</RowCode>
-					<LatitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LatitudeCode>
-					<LongitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LongitudeCode>
-					<LocationNameCode Class="CodeValue">
-						<Code><![CDATA[""]]></Code>
-					</LocationNameCode>
-					<InitializationType>SPECIFIED_NUMBER</InitializationType>
-					<InitializationDatabaseTableQuery>
-						<TableReference>
-						</TableReference>
-					</InitializationDatabaseTableQuery>
-					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
-					<QuantityColumn>
-					</QuantityColumn>
-				</EmbeddedObject>
-				<EmbeddedObject>
-					<Id>1731961340658</Id>
-					<Name><![CDATA[pipeline2]]></Name>
-					<ExcludeFromBuild>true</ExcludeFromBuild>
-					<X>665</X><Y>325</Y>
-					<Label><X>-15</X><Y>-20</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<ActiveObjectClass>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[Pipeline]]></ClassName>
-					</ActiveObjectClass>
-					<GenericParameterSubstitute>
-						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-							<ClassName><![CDATA[Pipeline]]></ClassName>
-							<ItemName><![CDATA[1412618001587]]></ItemName>
-						</GenericParameterSubstituteReference>
-					</GenericParameterSubstitute>
-					<Parameters>
-						<Parameter>
-							<Name><![CDATA[capacity]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[initialAmount]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[limitRate]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[maxRate]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[customPriority]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[priorityOutCustom]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[customInitialBatch]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[initialBatch]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[customInitialBatchColor]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[initialBatchColor]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[pipe]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[showBatchesInFlowchart]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onFull]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onNewBatchIn]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onNewBatchOut]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onRateChange]]></Name>
-						</Parameter>
-					</Parameters>
-					<ReplicationFlag>false</ReplicationFlag>
-					<Replication Class="CodeValue">
-						<Code><![CDATA[100]]></Code>
-					</Replication>
-					<CollectionType>ARRAY_LIST_BASED</CollectionType>
-					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
-					<XCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</XCode>
-					<YCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</YCode>
-					<ZCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ZCode>
-					<ColumnCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ColumnCode>
-					<RowCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</RowCode>
-					<LatitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LatitudeCode>
-					<LongitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LongitudeCode>
-					<LocationNameCode Class="CodeValue">
-						<Code><![CDATA[""]]></Code>
-					</LocationNameCode>
-					<InitializationType>SPECIFIED_NUMBER</InitializationType>
-					<InitializationDatabaseTableQuery>
-						<TableReference>
-						</TableReference>
-					</InitializationDatabaseTableQuery>
-					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
-					<QuantityColumn>
-					</QuantityColumn>
-				</EmbeddedObject>
-				<EmbeddedObject>
-					<Id>1731961360004</Id>
-					<Name><![CDATA[mixTank3]]></Name>
-					<ExcludeFromBuild>true</ExcludeFromBuild>
-					<X>740</X><Y>400</Y>
-					<Label><X>-25</X><Y>-20</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<ActiveObjectClass>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[MixTank]]></ClassName>
-					</ActiveObjectClass>
-					<GenericParameterSubstitute>
-						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-							<ClassName><![CDATA[MixTank]]></ClassName>
-							<ItemName><![CDATA[1441474738574]]></ItemName>
-						</GenericParameterSubstituteReference>
-					</GenericParameterSubstitute>
-					<Parameters>
-						<Parameter>
-							<Name><![CDATA[mixByAmounts]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[capacity]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[amount1]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[amount2]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[amount3]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[amount4]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[amount5]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[fraction1]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[fraction2]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[fraction3]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[fraction4]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[fraction5]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[delayTime]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[limitRateOut]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[maxRateOut]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[modeOutputBatch]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[outputBatch]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[customOutputBatchColor]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[outputBatchColor]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[storageTank]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[showBatchesInFlowchart]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onMixCompleted]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onMixReady]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onEmpty]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onRateChange]]></Name>
-						</Parameter>
-					</Parameters>
-					<ReplicationFlag>false</ReplicationFlag>
-					<Replication Class="CodeValue">
-						<Code><![CDATA[100]]></Code>
-					</Replication>
-					<CollectionType>ARRAY_LIST_BASED</CollectionType>
-					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
-					<XCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</XCode>
-					<YCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</YCode>
-					<ZCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ZCode>
-					<ColumnCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ColumnCode>
-					<RowCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</RowCode>
-					<LatitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LatitudeCode>
-					<LongitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LongitudeCode>
-					<LocationNameCode Class="CodeValue">
-						<Code><![CDATA[""]]></Code>
-					</LocationNameCode>
-					<InitializationType>SPECIFIED_NUMBER</InitializationType>
-					<InitializationDatabaseTableQuery>
-						<TableReference>
-						</TableReference>
-					</InitializationDatabaseTableQuery>
-					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
-					<QuantityColumn>
-					</QuantityColumn>
-				</EmbeddedObject>
-				<EmbeddedObject>
-					<Id>1731961486707</Id>
-					<Name><![CDATA[fluidExit]]></Name>
-					<ExcludeFromBuild>true</ExcludeFromBuild>
-					<X>1170</X><Y>315</Y>
-					<Label><X>-30</X><Y>-20</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<ActiveObjectClass>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[FluidExit]]></ClassName>
-					</ActiveObjectClass>
-					<GenericParameterSubstitute>
-						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-							<ClassName><![CDATA[FluidExit]]></ClassName>
-							<ItemName><![CDATA[1414747502602]]></ItemName>
-						</GenericParameterSubstituteReference>
-					</GenericParameterSubstitute>
-					<Parameters>
-						<Parameter>
-							<Name><![CDATA[fluidEnter]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[showBatchesInFlowchart]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onNewBatchIn]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onRateChange]]></Name>
-						</Parameter>
-					</Parameters>
-					<ReplicationFlag>false</ReplicationFlag>
-					<Replication Class="CodeValue">
-						<Code><![CDATA[100]]></Code>
-					</Replication>
-					<CollectionType>ARRAY_LIST_BASED</CollectionType>
-					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
-					<XCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</XCode>
-					<YCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</YCode>
-					<ZCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ZCode>
-					<ColumnCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ColumnCode>
-					<RowCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</RowCode>
-					<LatitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LatitudeCode>
-					<LongitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LongitudeCode>
-					<LocationNameCode Class="CodeValue">
-						<Code><![CDATA[""]]></Code>
-					</LocationNameCode>
-					<InitializationType>SPECIFIED_NUMBER</InitializationType>
-					<InitializationDatabaseTableQuery>
-						<TableReference>
-						</TableReference>
-					</InitializationDatabaseTableQuery>
-					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
-					<QuantityColumn>
-					</QuantityColumn>
-				</EmbeddedObject>
-				<EmbeddedObject>
-					<Id>1731961692173</Id>
-					<Name><![CDATA[waterConsumerses]]></Name>
-					<X>70</X><Y>360</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<ActiveObjectClass>
-						<PackageName><![CDATA[great_lakes]]></PackageName>
-						<ClassName><![CDATA[WaterConsumers]]></ClassName>
-					</ActiveObjectClass>
-					<GenericParameterSubstitute>
-						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[great_lakes]]></PackageName>
-							<ClassName><![CDATA[WaterConsumers]]></ClassName>
-							<ItemName><![CDATA[1731961692157]]></ItemName>
-						</GenericParameterSubstituteReference>
-					</GenericParameterSubstitute>
-					<Parameters>
-					</Parameters>
-					<ReplicationFlag>true</ReplicationFlag>
-					<Replication Class="CodeValue">
-						<Code><![CDATA[100]]></Code>
-					</Replication>
-					<CollectionType>ARRAY_LIST_BASED</CollectionType>
-					<InEnvironment>true</InEnvironment>	
-					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
-					<XCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</XCode>
-					<YCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</YCode>
-					<ZCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ZCode>
-					<ColumnCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ColumnCode>
-					<RowCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</RowCode>
-					<LatitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LatitudeCode>
-					<LongitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LongitudeCode>
-					<LocationNameCode Class="CodeValue">
-						<Code><![CDATA[""]]></Code>
-					</LocationNameCode>
-					<InitializationType>SPECIFIED_NUMBER</InitializationType>
-					<InitializationDatabaseTableQuery>
-						<TableReference>
-						</TableReference>
-					</InitializationDatabaseTableQuery>
-					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
-					<QuantityColumn>
-					</QuantityColumn>
-				</EmbeddedObject>
-				<EmbeddedObject>
-					<Id>1731961931108</Id>
-					<Name><![CDATA[Dam]]></Name>
-					<X>460</X><Y>230</Y>
-					<Label><X>-15</X><Y>-20</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<ActiveObjectClass>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[Valve]]></ClassName>
-					</ActiveObjectClass>
-					<GenericParameterSubstitute>
-						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-							<ClassName><![CDATA[Valve]]></ClassName>
-							<ItemName><![CDATA[1412618001593]]></ItemName>
-						</GenericParameterSubstituteReference>
-					</GenericParameterSubstitute>
-					<Parameters>
-						<Parameter>
-							<Name><![CDATA[maxOpenRate]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[openRate]]></Name>
-							<Value Class="CodeUnitValue">
-								<Code><![CDATA[]]></Code>
-								<Unit Class="FlowRateUnits"><![CDATA[CUBIC_METER_PER_SECOND]]></Unit>
-							</Value>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[closed]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[true]]></Code>
-							</Value>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[showBatchesInFlowchart]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[actionOnPortion]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[portionSize]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onPortion]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onDispensed]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onNewBatchIn]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onRateChange]]></Name>
-						</Parameter>
-					</Parameters>
-					<ReplicationFlag>false</ReplicationFlag>
-					<Replication Class="CodeValue">
-						<Code><![CDATA[100]]></Code>
-					</Replication>
-					<CollectionType>ARRAY_LIST_BASED</CollectionType>
-					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
-					<XCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</XCode>
-					<YCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</YCode>
-					<ZCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ZCode>
-					<ColumnCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ColumnCode>
-					<RowCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</RowCode>
-					<LatitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LatitudeCode>
-					<LongitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LongitudeCode>
-					<LocationNameCode Class="CodeValue">
-						<Code><![CDATA[""]]></Code>
-					</LocationNameCode>
-					<InitializationType>SPECIFIED_NUMBER</InitializationType>
-					<InitializationDatabaseTableQuery>
-						<TableReference>
-						</TableReference>
-					</InitializationDatabaseTableQuery>
-					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
-					<QuantityColumn>
-					</QuantityColumn>
-				</EmbeddedObject>
-				<EmbeddedObject>
-					<Id>1731962512141</Id>
-					<Name><![CDATA[ToHuron]]></Name>
-					<X>550</X><Y>230</Y>
-					<Label><X>-30</X><Y>-20</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<ActiveObjectClass>
-						<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-						<ClassName><![CDATA[FluidExit]]></ClassName>
-					</ActiveObjectClass>
-					<GenericParameterSubstitute>
-						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[com.anylogic.libraries.fluid]]></PackageName>
-							<ClassName><![CDATA[FluidExit]]></ClassName>
-							<ItemName><![CDATA[1414747502602]]></ItemName>
-						</GenericParameterSubstituteReference>
-					</GenericParameterSubstitute>
-					<Parameters>
-						<Parameter>
-							<Name><![CDATA[fluidEnter]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[showBatchesInFlowchart]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onNewBatchIn]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onRateChange]]></Name>
-						</Parameter>
-					</Parameters>
-					<ReplicationFlag>false</ReplicationFlag>
-					<Replication Class="CodeValue">
-						<Code><![CDATA[100]]></Code>
-					</Replication>
-					<CollectionType>ARRAY_LIST_BASED</CollectionType>
-					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
-					<XCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</XCode>
-					<YCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</YCode>
-					<ZCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ZCode>
-					<ColumnCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</ColumnCode>
-					<RowCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</RowCode>
-					<LatitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LatitudeCode>
-					<LongitudeCode Class="CodeValue">
-						<Code><![CDATA[0]]></Code>
-					</LongitudeCode>
-					<LocationNameCode Class="CodeValue">
-						<Code><![CDATA[""]]></Code>
-					</LocationNameCode>
-					<InitializationType>SPECIFIED_NUMBER</InitializationType>
-					<InitializationDatabaseTableQuery>
-						<TableReference>
-						</TableReference>
-					</InitializationDatabaseTableQuery>
-					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
-					<QuantityColumn>
-					</QuantityColumn>
-				</EmbeddedObject>
-			</EmbeddedObjects>
 
 			<Presentation>
 				<Level>
@@ -2485,16 +1563,17 @@
 				<Image>
 					<Id>1731960620012</Id>
 					<Name><![CDATA[image]]></Name>
-					<X>240</X><Y>560</Y>
+					<X>40</X><Y>20</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
+					<Lock>true</Lock>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Z>0</Z>
-					<Width>600</Width>
-					<Height>400</Height>
+					<Width>780</Width>
+					<Height>520</Height>
 					<Rotation>0.0</Rotation>
 					<ImageFiles>
 						<ImageResourceReference>
@@ -2504,69 +1583,6 @@
 					</ImageFiles>
 					<OriginalSize>false</OriginalSize>
 				</Image>
-				<StorageTank>
-					<Id>1731960797152</Id>
-					<Name><![CDATA[LakeSuperior]]></Name>
-					<X>290</X><Y>190</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Z>0</Z>
-					<LineColor>1077952576</LineColor>
-					<LineMaterial>null</LineMaterial>
-					<Diameter>100</Diameter>				
-					<Height>100</Height>				
-				</StorageTank>
-				<StorageTank>
-					<Id>1731961027028</Id>
-					<Name><![CDATA[storageTank]]></Name>
-					<ExcludeFromBuild>true</ExcludeFromBuild>
-					<X>790</X><Y>265</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Z>0</Z>
-					<LineColor>1077952576</LineColor>
-					<LineMaterial>null</LineMaterial>
-					<Diameter>100</Diameter>				
-					<Height>100</Height>				
-				</StorageTank>
-				<StorageTank>
-					<Id>1731961037142</Id>
-					<Name><![CDATA[storageTank2]]></Name>
-					<ExcludeFromBuild>true</ExcludeFromBuild>
-					<X>1010</X><Y>410</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Z>0</Z>
-					<LineColor>1077952576</LineColor>
-					<LineMaterial>null</LineMaterial>
-					<Diameter>50</Diameter>				
-					<Height>100</Height>				
-				</StorageTank>
-				<StorageTank>
-					<Id>1731961065860</Id>
-					<Name><![CDATA[storageTank3]]></Name>
-					<ExcludeFromBuild>true</ExcludeFromBuild>
-					<X>1090</X><Y>300</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<Z>0</Z>
-					<LineColor>1077952576</LineColor>
-					<LineMaterial>null</LineMaterial>
-					<Diameter>60</Diameter>				
-					<Height>100</Height>				
-				</StorageTank>
 				<Control Type="Button">
 				 	<EmbeddedIcon>false</EmbeddedIcon>				
 					<Id>1731962966953</Id>
@@ -2591,7 +1607,7 @@
 				 	<EmbeddedIcon>false</EmbeddedIcon>				
 					<Id>1731962972230</Id>
 					<Name><![CDATA[CloseDam]]></Name>
-					<X>430</X><Y>340</Y>
+					<X>270</X><Y>470</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2732,21 +1748,6 @@
 				</AgentLink>
 			</AgentLinks>
 
-			<ContainerLinks>
-				<ContainerLink>
-					<Id>1731961692218</Id>
-					<Name><![CDATA[main]]></Name>
-					<X>50</X><Y>-100</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<ActiveObjectClass>
-						<PackageName><![CDATA[great_lakes]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-					</ActiveObjectClass>
-				</ContainerLink>
-			</ContainerLinks>
 
 			<Presentation>
 				<Level>
@@ -2987,6 +1988,81 @@
 			</Presentation>
 
 			<Parameters>			
+				<Parameter>
+					<ParameterName><![CDATA[SuperiorPrecipitation]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[SuperiorRunOff]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[SuperiorDam]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[SuperiorInitial]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[SuperiorConsumer]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[HuronPrecipitation]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[HuronRunOff]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[HuronDam]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[HuronInitial]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[HuronConsumer]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[EriePrecipitation]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[ErieRunOff]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[ErieDam]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[ErieInitial]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[ErieConsumer]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[OntarioPrecipitation]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[OntarioRunOff]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[OntarioDam]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[OntarioInitial]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[OntarioConsumer]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[MichiganPrecipitation]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[MichiganRunOff]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[MichiganDam]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[MichiganInitial]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[MichiganConsumer]]></ParameterName>
+				</Parameter>
 			</Parameters>			
 			<PresentationProperties>
 				<EnableZoomAndPanning>true</EnableZoomAndPanning>
