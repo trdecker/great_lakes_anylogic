@@ -115,7 +115,7 @@
 				<Variable Class="StockVariable">
 					<Id>1732396479023</Id>
 					<Name><![CDATA[Superior]]></Name>
-					<X>290</X><Y>130</Y>
+					<X>430</X><Y>130</Y>
 					<Label><X>-30</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -131,7 +131,7 @@
 				<Variable Class="StockVariable">
 					<Id>1732396482133</Id>
 					<Name><![CDATA[MichiganHuron]]></Name>
-					<X>420</X><Y>280</Y>
+					<X>560</X><Y>280</Y>
 					<Label><X>-65</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -147,7 +147,7 @@
 				<Variable Class="StockVariable">
 					<Id>1732397484062</Id>
 					<Name><![CDATA[Erie]]></Name>
-					<X>580</X><Y>430</Y>
+					<X>720</X><Y>430</Y>
 					<Label><X>-15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -163,7 +163,7 @@
 				<Variable Class="StockVariable">
 					<Id>1732397486480</Id>
 					<Name><![CDATA[Ontario]]></Name>
-					<X>710</X><Y>330</Y>
+					<X>850</X><Y>330</Y>
 					<Label><X>-30</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -179,7 +179,7 @@
 				<Variable Class="Flow">
 					<Id>1732396597765</Id>
 					<Name><![CDATA[MaryRiver]]></Name>
-					<X>290</X><Y>130</Y>
+					<X>430</X><Y>130</Y>
 					<Label><X>5</X><Y>-20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -199,28 +199,28 @@
 				<Variable Class="Flow">
 					<Id>1732396602629</Id>
 					<Name><![CDATA[Prec1]]></Name>
-					<X>200</X><Y>50</Y>
+					<X>280</X><Y>40</Y>
 					<Label><X>-5</X><Y>-20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties TargetId="1732396479023" External="false" Constant="false" Array="false">
-						<Formula><![CDATA[SupSupPrec]]></Formula>
+						<Formula><![CDATA[SupPrec]]></Formula>
 						<Value><![CDATA[PrecipitationRate]]></Value>
 						<Color/>
 						<ValveIndex>1</ValveIndex>
 						<Points>
 							<Point><X>0</X><Y>0</Y></Point>
-							<Point><X>30</X><Y>40</Y></Point>
-							<Point><X>90</X><Y>80</Y></Point>
+							<Point><X>50</X><Y>20</Y></Point>
+							<Point><X>150</X><Y>90</Y></Point>
 						</Points>
 					</Properties>
 				</Variable>
 				<Variable Class="Flow">
 					<Id>1732396609349</Id>
 					<Name><![CDATA[RunOff1]]></Name>
-					<X>110</X><Y>230</Y>
-					<Label><X>-135</X><Y>5</Y></Label>
+					<X>210</X><Y>260</Y>
+					<Label><X>-70</X><Y>-15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -230,16 +230,16 @@
 						<ValveIndex>1</ValveIndex>
 						<Points>
 							<Point><X>0</X><Y>0</Y></Point>
-							<Point><X>70</X><Y>-20</Y></Point>
-							<Point><X>180</X><Y>-100</Y></Point>
+							<Point><X>60</X><Y>-20</Y></Point>
+							<Point><X>220</X><Y>-130</Y></Point>
 						</Points>
 					</Properties>
 				</Variable>
 				<Variable Class="Flow">
 					<Id>1732397499175</Id>
 					<Name><![CDATA[DetroitRiver]]></Name>
-					<X>420</X><Y>280</Y>
-					<Label><X>0</X><Y>-20</Y></Label>
+					<X>560</X><Y>280</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -256,9 +256,9 @@
 				</Variable>
 				<Variable Class="Flow">
 					<Id>1732397503971</Id>
-					<Name><![CDATA[Niagarariver]]></Name>
-					<X>580</X><Y>430</Y>
-					<Label><X>-90</X><Y>-10</Y></Label>
+					<Name><![CDATA[NiagaraRiver]]></Name>
+					<X>720</X><Y>430</Y>
+					<Label><X>-105</X><Y>-25</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -268,7 +268,7 @@
 						<ValveIndex>1</ValveIndex>
 						<Points>
 							<Point><X>0</X><Y>0</Y></Point>
-							<Point><X>80</X><Y>-50</Y></Point>
+							<Point><X>90</X><Y>-40</Y></Point>
 							<Point><X>130</X><Y>-100</Y></Point>
 						</Points>
 					</Properties>
@@ -276,7 +276,7 @@
 				<Variable Class="Flow">
 					<Id>1732397533969</Id>
 					<Name><![CDATA[Runoff2]]></Name>
-					<X>190</X><Y>370</Y>
+					<X>330</X><Y>370</Y>
 					<Label><X>-85</X><Y>-10</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -295,8 +295,8 @@
 				<Variable Class="Flow">
 					<Id>1732397581219</Id>
 					<Name><![CDATA[Prec2]]></Name>
-					<X>190</X><Y>420</Y>
-					<Label><X>-120</X><Y>40</Y></Label>
+					<X>330</X><Y>420</Y>
+					<Label><X>-30</X><Y>25</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -306,7 +306,7 @@
 						<ValveIndex>1</ValveIndex>
 						<Points>
 							<Point><X>0</X><Y>0</Y></Point>
-							<Point><X>80</X><Y>-30</Y></Point>
+							<Point><X>60</X><Y>-20</Y></Point>
 							<Point><X>230</X><Y>-140</Y></Point>
 						</Points>
 					</Properties>
@@ -314,7 +314,7 @@
 				<Variable Class="Flow">
 					<Id>1732397637745</Id>
 					<Name><![CDATA[Evap1]]></Name>
-					<X>290</X><Y>130</Y>
+					<X>430</X><Y>130</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -326,15 +326,15 @@
 						<Points>
 							<Point><X>0</X><Y>0</Y></Point>
 							<Point><X>-50</X><Y>100</Y></Point>
-							<Point><X>-130</X><Y>145</Y></Point>
+							<Point><X>-90</X><Y>180</Y></Point>
 						</Points>
 					</Properties>
 				</Variable>
 				<Variable Class="Flow">
 					<Id>1732564005645</Id>
-					<Name><![CDATA[flow2]]></Name>
-					<X>420</X><Y>280</Y>
-					<Label><X>-90</X><Y>20</Y></Label>
+					<Name><![CDATA[Evap2]]></Name>
+					<X>560</X><Y>280</Y>
+					<Label><X>-10</X><Y>30</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -344,16 +344,16 @@
 						<ValveIndex>1</ValveIndex>
 						<Points>
 							<Point><X>0</X><Y>0</Y></Point>
-							<Point><X>20</X><Y>70</Y></Point>
-							<Point><X>-50</X><Y>110</Y></Point>
+							<Point><X>150</X><Y>-80</Y></Point>
+							<Point><X>210</X><Y>-140</Y></Point>
 						</Points>
 					</Properties>
 				</Variable>
 				<Variable Class="Flow">
 					<Id>1732564189823</Id>
 					<Name><![CDATA[LawrenceRiver]]></Name>
-					<X>710</X><Y>330</Y>
-					<Label><X>0</X><Y>-20</Y></Label>
+					<X>850</X><Y>330</Y>
+					<Label><X>-5</X><Y>25</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -363,7 +363,7 @@
 						<ValveIndex>1</ValveIndex>
 						<Points>
 							<Point><X>0</X><Y>0</Y></Point>
-							<Point><X>60</X><Y>-30</Y></Point>
+							<Point><X>90</X><Y>-70</Y></Point>
 							<Point><X>120</X><Y>-110</Y></Point>
 						</Points>
 					</Properties>
@@ -371,7 +371,7 @@
 				<Variable Class="Flow">
 					<Id>1732564678699</Id>
 					<Name><![CDATA[Runoff3]]></Name>
-					<X>480</X><Y>500</Y>
+					<X>620</X><Y>500</Y>
 					<Label><X>-95</X><Y>10</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -390,7 +390,7 @@
 				<Variable Class="Flow">
 					<Id>1732564703532</Id>
 					<Name><![CDATA[Prec3]]></Name>
-					<X>511</X><Y>516</Y>
+					<X>651</X><Y>516</Y>
 					<Label><X>-56</X><Y>39</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -409,7 +409,7 @@
 				<Variable Class="Flow">
 					<Id>1732564709475</Id>
 					<Name><![CDATA[Evap3]]></Name>
-					<X>580</X><Y>430</Y>
+					<X>720</X><Y>430</Y>
 					<Label><X>-10</X><Y>55</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -428,8 +428,8 @@
 				<Variable Class="Flow">
 					<Id>1732564742505</Id>
 					<Name><![CDATA[Runoff4]]></Name>
-					<X>720</X><Y>420</Y>
-					<Label><X>-15</X><Y>60</Y></Label>
+					<X>920</X><Y>460</Y>
+					<Label><X>15</X><Y>-5</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -439,16 +439,16 @@
 						<ValveIndex>1</ValveIndex>
 						<Points>
 							<Point><X>0</X><Y>0</Y></Point>
-							<Point><X>-10</X><Y>-40</Y></Point>
-							<Point><X>-10</X><Y>-90</Y></Point>
+							<Point><X>-50</X><Y>-40</Y></Point>
+							<Point><X>-70</X><Y>-130</Y></Point>
 						</Points>
 					</Properties>
 				</Variable>
 				<Variable Class="Flow">
 					<Id>1732564755757</Id>
 					<Name><![CDATA[Prec4]]></Name>
-					<X>760</X><Y>410</Y>
-					<Label><X>5</X><Y>70</Y></Label>
+					<X>970</X><Y>390</Y>
+					<Label><X>-35</X><Y>25</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -458,16 +458,16 @@
 						<ValveIndex>1</ValveIndex>
 						<Points>
 							<Point><X>0</X><Y>0</Y></Point>
-							<Point><X>-10</X><Y>-50</Y></Point>
-							<Point><X>-50</X><Y>-80</Y></Point>
+							<Point><X>-40</X><Y>-30</Y></Point>
+							<Point><X>-120</X><Y>-60</Y></Point>
 						</Points>
 					</Properties>
 				</Variable>
 				<Variable Class="Flow">
 					<Id>1732564764259</Id>
 					<Name><![CDATA[Evap4]]></Name>
-					<X>710</X><Y>330</Y>
-					<Label><X>-60</X><Y>10</Y></Label>
+					<X>850</X><Y>330</Y>
+					<Label><X>-65</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -477,16 +477,92 @@
 						<ValveIndex>1</ValveIndex>
 						<Points>
 							<Point><X>0</X><Y>0</Y></Point>
-							<Point><X>-20</X><Y>-50</Y></Point>
-							<Point><X>-20</X><Y>-110</Y></Point>
+							<Point><X>60</X><Y>-100</Y></Point>
+							<Point><X>90</X><Y>-150</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1733516323240</Id>
+					<Name><![CDATA[Con1]]></Name>
+					<X>430</X><Y>130</Y>
+					<Label><X>-45</X><Y>-15</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SourceId="1732396479023" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[SupCon]]></Formula>
+						<Color/>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>-130</X><Y>160</Y></Point>
+							<Point><X>-200</X><Y>180</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1733516372501</Id>
+					<Name><![CDATA[Con2]]></Name>
+					<X>560</X><Y>280</Y>
+					<Label><X>-60</X><Y>5</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SourceId="1732396482133" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[HurMichCon]]></Formula>
+						<Color/>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>140</X><Y>-120</Y></Point>
+							<Point><X>160</X><Y>-200</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1733516431869</Id>
+					<Name><![CDATA[Con3]]></Name>
+					<X>720</X><Y>430</Y>
+					<Label><X>0</X><Y>-20</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SourceId="1732397484062" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[ErieCon]]></Formula>
+						<Color/>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>40</X><Y>50</Y></Point>
+							<Point><X>80</X><Y>70</Y></Point>
+						</Points>
+					</Properties>
+				</Variable>
+				<Variable Class="Flow">
+					<Id>1733516456664</Id>
+					<Name><![CDATA[Con4]]></Name>
+					<X>850</X><Y>330</Y>
+					<Label><X>-70</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SourceId="1732397486480" External="false" Constant="false" Array="false">
+						<Formula><![CDATA[OntCon]]></Formula>
+						<Color/>
+						<ValveIndex>1</ValveIndex>
+						<Points>
+							<Point><X>0</X><Y>0</Y></Point>
+							<Point><X>-20</X><Y>-80</Y></Point>
+							<Point><X>-40</X><Y>-130</Y></Point>
 						</Points>
 					</Properties>
 				</Variable>
 				<Variable Class="Parameter">
 					<Id>1732396649859</Id>
-					<Name><![CDATA[SupSupPrec]]></Name>
-					<X>50</X><Y>580</Y>
-					<Label><X>10</X><Y>0</Y></Label>
+					<Name><![CDATA[SupPrec]]></Name>
+					<X>120</X><Y>150</Y>
+					<Label><X>-110</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -509,8 +585,8 @@
 				<Variable Class="Parameter">
 					<Id>1732396659018</Id>
 					<Name><![CDATA[SupRunoff]]></Name>
-					<X>50</X><Y>560</Y>
-					<Label><X>10</X><Y>0</Y></Label>
+					<X>120</X><Y>280</Y>
+					<Label><X>-100</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -533,8 +609,8 @@
 				<Variable Class="Parameter">
 					<Id>1732396697043</Id>
 					<Name><![CDATA[MaryFlow]]></Name>
-					<X>50</X><Y>620</Y>
-					<Label><X>10</X><Y>0</Y></Label>
+					<X>660</X><Y>70</Y>
+					<Label><X>-90</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -557,8 +633,8 @@
 				<Variable Class="Parameter">
 					<Id>1732396784436</Id>
 					<Name><![CDATA[SupInitial]]></Name>
-					<X>50</X><Y>600</Y>
-					<Label><X>10</X><Y>0</Y></Label>
+					<X>120</X><Y>200</Y>
+					<Label><X>-90</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -581,8 +657,8 @@
 				<Variable Class="Parameter">
 					<Id>1732397728026</Id>
 					<Name><![CDATA[SupEvap]]></Name>
-					<X>50</X><Y>640</Y>
-					<Label><X>10</X><Y>0</Y></Label>
+					<X>120</X><Y>420</Y>
+					<Label><X>-80</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -605,7 +681,7 @@
 				<Variable Class="Parameter">
 					<Id>1732563823029</Id>
 					<Name><![CDATA[DetroitFlow]]></Name>
-					<X>390</X><Y>610</Y>
+					<X>530</X><Y>610</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -629,7 +705,7 @@
 				<Variable Class="Parameter">
 					<Id>1732564099605</Id>
 					<Name><![CDATA[EriePrec]]></Name>
-					<X>570</X><Y>590</Y>
+					<X>710</X><Y>590</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -653,7 +729,7 @@
 				<Variable Class="Parameter">
 					<Id>1732564099611</Id>
 					<Name><![CDATA[ErieRunOff]]></Name>
-					<X>460</X><Y>570</Y>
+					<X>600</X><Y>570</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -677,7 +753,7 @@
 				<Variable Class="Parameter">
 					<Id>1732564099617</Id>
 					<Name><![CDATA[NiagaraFlow]]></Name>
-					<X>810</X><Y>550</Y>
+					<X>1000</X><Y>530</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -701,7 +777,7 @@
 				<Variable Class="Parameter">
 					<Id>1732564099623</Id>
 					<Name><![CDATA[ErieInitial]]></Name>
-					<X>570</X><Y>560</Y>
+					<X>710</X><Y>560</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -725,7 +801,7 @@
 				<Variable Class="Parameter">
 					<Id>1732564099630</Id>
 					<Name><![CDATA[ErieEvap]]></Name>
-					<X>720</X><Y>550</Y>
+					<X>860</X><Y>550</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -749,7 +825,7 @@
 				<Variable Class="Parameter">
 					<Id>1732564107036</Id>
 					<Name><![CDATA[OntPrec]]></Name>
-					<X>910</X><Y>360</Y>
+					<X>1050</X><Y>400</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -773,7 +849,7 @@
 				<Variable Class="Parameter">
 					<Id>1732564107043</Id>
 					<Name><![CDATA[OntRunOff]]></Name>
-					<X>910</X><Y>380</Y>
+					<X>1050</X><Y>440</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -797,7 +873,7 @@
 				<Variable Class="Parameter">
 					<Id>1732564107049</Id>
 					<Name><![CDATA[LawrenceFlow]]></Name>
-					<X>910</X><Y>300</Y>
+					<X>1050</X><Y>260</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -821,7 +897,7 @@
 				<Variable Class="Parameter">
 					<Id>1732564107054</Id>
 					<Name><![CDATA[OntInitial]]></Name>
-					<X>910</X><Y>340</Y>
+					<X>1050</X><Y>310</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -846,7 +922,7 @@
 				<Variable Class="Parameter">
 					<Id>1732564107059</Id>
 					<Name><![CDATA[OntEvap]]></Name>
-					<X>910</X><Y>320</Y>
+					<X>1050</X><Y>160</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -870,8 +946,8 @@
 				<Variable Class="Parameter">
 					<Id>1732564446422</Id>
 					<Name><![CDATA[HurMichPrec]]></Name>
-					<X>240</X><Y>580</Y>
-					<Label><X>10</X><Y>0</Y></Label>
+					<X>390</X><Y>480</Y>
+					<Label><X>-120</X><Y>5</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -894,7 +970,7 @@
 				<Variable Class="Parameter">
 					<Id>1732564446436</Id>
 					<Name><![CDATA[HurMichRunoff]]></Name>
-					<X>240</X><Y>560</Y>
+					<X>250</X><Y>460</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -918,8 +994,8 @@
 				<Variable Class="Parameter">
 					<Id>1732564446447</Id>
 					<Name><![CDATA[HurMichInitial]]></Name>
-					<X>240</X><Y>600</Y>
-					<Label><X>10</X><Y>0</Y></Label>
+					<X>490</X><Y>610</Y>
+					<Label><X>-125</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
@@ -942,7 +1018,7 @@
 				<Variable Class="Parameter">
 					<Id>1732564446452</Id>
 					<Name><![CDATA[HurMichEvap]]></Name>
-					<X>240</X><Y>620</Y>
+					<X>790</X><Y>80</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -966,7 +1042,7 @@
 				<Variable Class="Parameter">
 					<Id>1733342932942</Id>
 					<Name><![CDATA[SupLevelFloor]]></Name>
-					<X>1040</X><Y>410</Y>
+					<X>1220</X><Y>410</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -990,7 +1066,7 @@
 				<Variable Class="Parameter">
 					<Id>1733342976627</Id>
 					<Name><![CDATA[ErieLevelFloor]]></Name>
-					<X>1040</X><Y>450</Y>
+					<X>1220</X><Y>450</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1014,7 +1090,7 @@
 				<Variable Class="Parameter">
 					<Id>1733342977331</Id>
 					<Name><![CDATA[OntLevelFloor]]></Name>
-					<X>1040</X><Y>470</Y>
+					<X>1220</X><Y>470</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1038,7 +1114,7 @@
 				<Variable Class="Parameter">
 					<Id>1733342978360</Id>
 					<Name><![CDATA[HurMichLevelFloor]]></Name>
-					<X>1040</X><Y>430</Y>
+					<X>1220</X><Y>430</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1059,15 +1135,111 @@
 						</ParameterEditor>
 					</Properties>                 
 				</Variable>
+				<Variable Class="Parameter">
+					<Id>1733516530727</Id>
+					<Name><![CDATA[SupCon]]></Name>
+					<X>120</X><Y>370</Y>
+					<Label><X>-75</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0.00000000140200463]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1733516530725</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1733516552156</Id>
+					<Name><![CDATA[HurMichCon]]></Name>
+					<X>660</X><Y>50</Y>
+					<Label><X>-115</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0.00000003789793764]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1733516552154</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1733516568141</Id>
+					<Name><![CDATA[ErieCon]]></Name>
+					<X>860</X><Y>530</Y>
+					<Label><X>15</X><Y>1</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0.00000001879562457]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1733516568139</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1733516606225</Id>
+					<Name><![CDATA[OntCon]]></Name>
+					<X>1050</X><Y>110</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0.00000001542205093]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1733516606223</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
 			</Variables>
 			<Dependences>
 				<Link SourceId="1732396784436" TargetId="1732396479023" Polarity="null">
-					<Height>65.315</Height>
+					<Height>31.928</Height>
 					<PolarityPosition>0.95</PolarityPosition>
-					<Direction><X>240</X><Y>-470</Y></Direction>
+					<Direction><X>310</X><Y>-70</Y></Direction>
 					<Id>1732396909997</Id>
 					<Name><![CDATA[SupInitial - Superior]]></Name>
-					<X>50</X><Y>600</Y>
+					<X>120</X><Y>200</Y>
 					<Label><X>40</X><Y>-50</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1077,12 +1249,12 @@
 					<Delay>false</Delay>
 				</Link>
 				<Link SourceId="1732396659018" TargetId="1732396609349" Polarity="null">
-					<Height>30.428</Height>
+					<Height>20.947</Height>
 					<PolarityPosition>0.95</PolarityPosition>
-					<Direction><X>130</X><Y>-350</Y></Direction>
+					<Direction><X>200</X><Y>-70</Y></Direction>
 					<Id>1732397031796</Id>
 					<Name><![CDATA[SupRunoff - RunOff1]]></Name>
-					<X>50</X><Y>560</Y>
+					<X>120</X><Y>280</Y>
 					<Label><X>40</X><Y>-50</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1092,12 +1264,12 @@
 					<Delay>false</Delay>
 				</Link>
 				<Link SourceId="1732396649859" TargetId="1732396602629" Polarity="null">
-					<Height>43.735</Height>
+					<Height>27.383</Height>
 					<PolarityPosition>0.95</PolarityPosition>
-					<Direction><X>180</X><Y>-490</Y></Direction>
+					<Direction><X>250</X><Y>-60</Y></Direction>
 					<Id>1732397228125</Id>
-					<Name><![CDATA[SupSupPrec - Prec1]]></Name>
-					<X>50</X><Y>580</Y>
+					<Name><![CDATA[SupPrec - Prec1]]></Name>
+					<X>120</X><Y>150</Y>
 					<Label><X>40</X><Y>-50</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1107,12 +1279,12 @@
 					<Delay>false</Delay>
 				</Link>
 				<Link SourceId="1732396697043" TargetId="1732396597765" Polarity="null">
-					<Height>122.375</Height>
+					<Height>-24.077</Height>
 					<PolarityPosition>0.95</PolarityPosition>
-					<Direction><X>360</X><Y>-420</Y></Direction>
+					<Direction><X>-110</X><Y>130</Y></Direction>
 					<Id>1732397249531</Id>
 					<Name><![CDATA[MaryFlow - MaryRiver]]></Name>
-					<X>50</X><Y>620</Y>
+					<X>660</X><Y>70</Y>
 					<Label><X>40</X><Y>-50</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1122,12 +1294,12 @@
 					<Delay>false</Delay>
 				</Link>
 				<Link SourceId="1732397728026" TargetId="1732397637745" Polarity="null">
-					<Height>66.261</Height>
+					<Height>-16.987</Height>
 					<PolarityPosition>0.95</PolarityPosition>
-					<Direction><X>190</X><Y>-410</Y></Direction>
+					<Direction><X>260</X><Y>-190</Y></Direction>
 					<Id>1732397885008</Id>
 					<Name><![CDATA[SupEvap - Evap1]]></Name>
-					<X>50</X><Y>640</Y>
+					<X>120</X><Y>420</Y>
 					<Label><X>40</X><Y>-50</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1142,7 +1314,7 @@
 					<Direction><X>130</X><Y>-210</Y></Direction>
 					<Id>1732563949073</Id>
 					<Name><![CDATA[DetroitFlow - DetroitRiver]]></Name>
-					<X>390</X><Y>610</Y>
+					<X>530</X><Y>610</Y>
 					<Label><X>40</X><Y>-50</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1157,7 +1329,7 @@
 					<Direction><X>10</X><Y>-130</Y></Direction>
 					<Id>1732564242527</Id>
 					<Name><![CDATA[ErieInitial - Erie]]></Name>
-					<X>570</X><Y>560</Y>
+					<X>710</X><Y>560</Y>
 					<Label><X>40</X><Y>-50</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1169,10 +1341,10 @@
 				<Link SourceId="1732564099617" TargetId="1732397503971" Polarity="null">
 					<Height>20.0</Height>
 					<PolarityPosition>0.95</PolarityPosition>
-					<Direction><X>-150</X><Y>-170</Y></Direction>
+					<Direction><X>-190</X><Y>-140</Y></Direction>
 					<Id>1732564246985</Id>
-					<Name><![CDATA[NiagaraFlow - Niagarariver]]></Name>
-					<X>810</X><Y>550</Y>
+					<Name><![CDATA[NiagaraFlow - NiagaraRiver]]></Name>
+					<X>1000</X><Y>530</Y>
 					<Label><X>40</X><Y>-50</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1182,12 +1354,12 @@
 					<Delay>false</Delay>
 				</Link>
 				<Link SourceId="1732564107054" TargetId="1732397486480" Polarity="null">
-					<Height>20.0</Height>
+					<Height>0.0</Height>
 					<PolarityPosition>0.95</PolarityPosition>
-					<Direction><X>-200</X><Y>-10</Y></Direction>
+					<Direction><X>-200</X><Y>20</Y></Direction>
 					<Id>1732564398886</Id>
 					<Name><![CDATA[OntInitial - Ontario]]></Name>
-					<X>910</X><Y>340</Y>
+					<X>1050</X><Y>310</Y>
 					<Label><X>40</X><Y>-50</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1199,10 +1371,10 @@
 				<Link SourceId="1732564107049" TargetId="1732564189823" Polarity="null">
 					<Height>-3.484</Height>
 					<PolarityPosition>0.95</PolarityPosition>
-					<Direction><X>-140</X><Y>0</Y></Direction>
+					<Direction><X>-110</X><Y>0</Y></Direction>
 					<Id>1732564409367</Id>
 					<Name><![CDATA[LawrenceFlow - LawrenceRiver]]></Name>
-					<X>910</X><Y>300</Y>
+					<X>1050</X><Y>260</Y>
 					<Label><X>40</X><Y>-50</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1212,12 +1384,12 @@
 					<Delay>false</Delay>
 				</Link>
 				<Link SourceId="1732564446447" TargetId="1732396482133" Polarity="null">
-					<Height>52.304</Height>
+					<Height>-22.93</Height>
 					<PolarityPosition>0.95</PolarityPosition>
-					<Direction><X>180</X><Y>-320</Y></Direction>
+					<Direction><X>70</X><Y>-330</Y></Direction>
 					<Id>1732564529398</Id>
 					<Name><![CDATA[HurMichInitial - MichiganHuron]]></Name>
-					<X>240</X><Y>600</Y>
+					<X>490</X><Y>610</Y>
 					<Label><X>40</X><Y>-50</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1227,12 +1399,12 @@
 					<Delay>false</Delay>
 				</Link>
 				<Link SourceId="1732564446436" TargetId="1732397533969" Polarity="null">
-					<Height>20.0</Height>
+					<Height>10.434</Height>
 					<PolarityPosition>0.95</PolarityPosition>
-					<Direction><X>10</X><Y>-200</Y></Direction>
+					<Direction><X>140</X><Y>-100</Y></Direction>
 					<Id>1732564547621</Id>
 					<Name><![CDATA[HurMichRunoff - Runoff2]]></Name>
-					<X>240</X><Y>560</Y>
+					<X>250</X><Y>460</Y>
 					<Label><X>40</X><Y>-50</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1242,12 +1414,12 @@
 					<Delay>false</Delay>
 				</Link>
 				<Link SourceId="1732564446422" TargetId="1732397581219" Polarity="null">
-					<Height>20.0</Height>
+					<Height>-34.143</Height>
 					<PolarityPosition>0.95</PolarityPosition>
-					<Direction><X>40</X><Y>-180</Y></Direction>
+					<Direction><X>20</X><Y>-90</Y></Direction>
 					<Id>1732564551412</Id>
 					<Name><![CDATA[HurMichPrec - Prec2]]></Name>
-					<X>240</X><Y>580</Y>
+					<X>390</X><Y>480</Y>
 					<Label><X>40</X><Y>-50</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1257,12 +1429,12 @@
 					<Delay>false</Delay>
 				</Link>
 				<Link SourceId="1732564446452" TargetId="1732564005645" Polarity="null">
-					<Height>20.0</Height>
+					<Height>-6.877</Height>
 					<PolarityPosition>0.95</PolarityPosition>
-					<Direction><X>200</X><Y>-270</Y></Direction>
+					<Direction><X>-80</X><Y>120</Y></Direction>
 					<Id>1732564616089</Id>
-					<Name><![CDATA[HurMichEvap - flow2]]></Name>
-					<X>240</X><Y>620</Y>
+					<Name><![CDATA[HurMichEvap - Evap2]]></Name>
+					<X>790</X><Y>80</Y>
 					<Label><X>40</X><Y>-50</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1277,7 +1449,7 @@
 					<Direction><X>-140</X><Y>-80</Y></Direction>
 					<Id>1732564728033</Id>
 					<Name><![CDATA[ErieEvap - Evap3]]></Name>
-					<X>720</X><Y>550</Y>
+					<X>860</X><Y>550</Y>
 					<Label><X>40</X><Y>-50</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1292,7 +1464,7 @@
 					<Direction><X>60</X><Y>-90</Y></Direction>
 					<Id>1732564733270</Id>
 					<Name><![CDATA[ErieRunOff - Runoff3]]></Name>
-					<X>460</X><Y>570</Y>
+					<X>600</X><Y>570</Y>
 					<Label><X>40</X><Y>-50</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1307,7 +1479,7 @@
 					<Direction><X>-39</X><Y>-94</Y></Direction>
 					<Id>1732564737315</Id>
 					<Name><![CDATA[EriePrec - Prec3]]></Name>
-					<X>570</X><Y>590</Y>
+					<X>710</X><Y>590</Y>
 					<Label><X>40</X><Y>-50</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1319,10 +1491,10 @@
 				<Link SourceId="1732564107043" TargetId="1732564742505" Polarity="null">
 					<Height>20.0</Height>
 					<PolarityPosition>0.95</PolarityPosition>
-					<Direction><X>-200</X><Y>-20</Y></Direction>
+					<Direction><X>-180</X><Y>-20</Y></Direction>
 					<Id>1732564774609</Id>
 					<Name><![CDATA[OntRunOff - Runoff4]]></Name>
-					<X>910</X><Y>380</Y>
+					<X>1050</X><Y>440</Y>
 					<Label><X>40</X><Y>-50</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1332,12 +1504,12 @@
 					<Delay>false</Delay>
 				</Link>
 				<Link SourceId="1732564107036" TargetId="1732564755757" Polarity="null">
-					<Height>20.0</Height>
+					<Height>-18.45</Height>
 					<PolarityPosition>0.95</PolarityPosition>
-					<Direction><X>-160</X><Y>0</Y></Direction>
+					<Direction><X>-160</X><Y>-40</Y></Direction>
 					<Id>1732564778608</Id>
 					<Name><![CDATA[OntPrec - Prec4]]></Name>
-					<X>910</X><Y>360</Y>
+					<X>1050</X><Y>400</Y>
 					<Label><X>40</X><Y>-50</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1347,12 +1519,72 @@
 					<Delay>false</Delay>
 				</Link>
 				<Link SourceId="1732564107059" TargetId="1732564764259" Polarity="null">
-					<Height>35.718</Height>
+					<Height>-15.333</Height>
 					<PolarityPosition>0.95</PolarityPosition>
-					<Direction><X>-220</X><Y>-40</Y></Direction>
+					<Direction><X>-190</X><Y>100</Y></Direction>
 					<Id>1732564784161</Id>
 					<Name><![CDATA[OntEvap - Evap4]]></Name>
-					<X>910</X><Y>320</Y>
+					<X>1050</X><Y>160</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1733516530727" TargetId="1733516323240" Polarity="null">
+					<Height>-16.987</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>150</X><Y>-100</Y></Direction>
+					<Id>1733517899021</Id>
+					<Name><![CDATA[SupCon - Con1]]></Name>
+					<X>120</X><Y>370</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1733516552156" TargetId="1733516372501" Polarity="null">
+					<Height>12.534</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>40</X><Y>110</Y></Direction>
+					<Id>1733518094799</Id>
+					<Name><![CDATA[HurMichCon - Con2]]></Name>
+					<X>660</X><Y>50</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1733516568141" TargetId="1733516431869" Polarity="null">
+					<Height>-26.973</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-100</X><Y>-50</Y></Direction>
+					<Id>1733518133739</Id>
+					<Name><![CDATA[ErieCon - Con3]]></Name>
+					<X>860</X><Y>530</Y>
+					<Label><X>40</X><Y>-50</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Color/>
+					<LineWidth>1</LineWidth>
+					<Delay>false</Delay>
+				</Link>
+				<Link SourceId="1733516606225" TargetId="1733516456664" Polarity="null">
+					<Height>-32.688</Height>
+					<PolarityPosition>0.95</PolarityPosition>
+					<Direction><X>-220</X><Y>140</Y></Direction>
+					<Id>1733518300778</Id>
+					<Name><![CDATA[OntCon - Con4]]></Name>
+					<X>1050</X><Y>110</Y>
 					<Label><X>40</X><Y>-50</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1400,14 +1632,13 @@
 
 			<Presentation>
 				<Image>
-					<Id>1731960620012</Id>
-					<Name><![CDATA[image]]></Name>
-					<X>40</X><Y>20</Y>
+					<Id>1733516861284</Id>
+					<Name><![CDATA[lakesImage]]></Name>
+					<X>180</X><Y>20</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
-					<Lock>true</Lock>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Z>0</Z>
@@ -1417,53 +1648,11 @@
 					<ImageFiles>
 						<ImageResourceReference>
 							<PackageName><![CDATA[great_lakes]]></PackageName>
-							<ClassName><![CDATA[image.png]]></ClassName>
+							<ClassName><![CDATA[image3.png]]></ClassName>
 						</ImageResourceReference>
 					</ImageFiles>
 					<OriginalSize>false</OriginalSize>
 				</Image>
-				<Control Type="Button">
-				 	<EmbeddedIcon>false</EmbeddedIcon>				
-					<Id>1731962966953</Id>
-					<Name><![CDATA[button]]></Name>
-					<X>-360</X><Y>320</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<BasicProperties Width="100" Height="30">
-                        <EmbeddedIcon>false</EmbeddedIcon>	
-						<TextColor/>
-						<Enabled>true</Enabled>
-					</BasicProperties>
-					<ExtendedProperties>
-						<Font Name="Dialog" Size="11" Style="0"/>
-						<LabelText><![CDATA[button]]></LabelText>
-					</ExtendedProperties>
-				</Control>
-				<Control Type="CheckBox">
-				 	<EmbeddedIcon>false</EmbeddedIcon>				
-					<Id>1731962972230</Id>
-					<Name><![CDATA[CloseDam]]></Name>
-					<X>270</X><Y>470</Y>
-					<Label><X>0</X><Y>-10</Y></Label>
-					<PublicFlag>true</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<BasicProperties Width="100" Height="30">
-                        <EmbeddedIcon>false</EmbeddedIcon>	
-						<TextColor/>
-						<Enabled>true</Enabled>
-					</BasicProperties>
-					<ExtendedProperties>
-						<Font Name="Dialog" Size="11" Style="0"/>
-						<LabelText><![CDATA[Close Dam]]></LabelText>
-						<LinkTo>true</LinkTo>
-						<Link>Dam.closed</Link>
-	 				</ExtendedProperties>
-				</Control>
 			</Presentation>
 
 				</Level>
@@ -1751,8 +1940,8 @@
 	<RelativeAccuracy>1.0E-5</RelativeAccuracy>
 	<TimeAccuracy>1.0E-5</TimeAccuracy>
 	<Frame>
-		<Width>1000</Width>
-		<Height>600</Height>
+		<Width>1180</Width>
+		<Height>640</Height>
 	</Frame>
 	<Database>
 		<Logging>false</Logging>
@@ -1828,7 +2017,7 @@
 
 			<Parameters>			
 				<Parameter>
-					<ParameterName><![CDATA[SupSupPrec]]></ParameterName>
+					<ParameterName><![CDATA[SupPrec]]></ParameterName>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[SupRunoff]]></ParameterName>
@@ -1899,6 +2088,18 @@
 				<Parameter>
 					<ParameterName><![CDATA[HurMichLevelFloor]]></ParameterName>
 				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[SupCon]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[HurMichCon]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[ErieCon]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[OntCon]]></ParameterName>
+				</Parameter>
 			</Parameters>			
 			<PresentationProperties>
 				<EnableZoomAndPanning>true</EnableZoomAndPanning>
@@ -1920,7 +2121,7 @@
 	</Experiments>
 	<ModelResources>
 		<Resource>
-			<Path><![CDATA[image.png]]></Path>
+			<Path><![CDATA[image3.png]]></Path>
 			<ReferencedFromUserCode>false</ReferencedFromUserCode>
 			<Location>FILE_SYSTEM</Location>
 		</Resource>
